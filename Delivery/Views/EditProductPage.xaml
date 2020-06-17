@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Delivery.Views.EditProductPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Guardar" Command="{Binding SaveCommand}" />
+        <ToolbarItem Text="Cancelar" Command="{Binding CancelCommand}" />
+
+
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Grid                          
+                        Padding="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <ActivityIndicator
+                    IsRunning="{Binding IsBusy}"
+                    d:IsRunning="True" />
+                    <Label Text="Name" Grid.Column="0" Grid.Row="0" FontAttributes="Bold" TextColor="White"></Label>
+                    <Entry 
+                    WidthRequest="50"
+                    Placeholder="Name" 
+                    Text="{Binding Name}" Grid.Column="1" Grid.Row="0"  TextColor="Black" />
+                    <Label Text="Status" Grid.Column="0" Grid.Row="1" FontAttributes="Bold" TextColor="White"></Label>
+                    <Entry
+                    Placeholder="Status"
+                    Text="{Binding Status}" Grid.Column="1" Grid.Row="1"  TextColor="Black"/>
+                    <Label Text="Latitude" Grid.Column="0" Grid.Row="2" FontAttributes="Bold" TextColor="White"></Label>
+                    <Entry
+                    Placeholder="Latitude"
+                    Text="{Binding Latitude}" Grid.Column="1" Grid.Row="2"  TextColor="Black"/>
+                    <Label Text="Longitude" Grid.Column="0" Grid.Row="3" FontAttributes="Bold" TextColor="White"></Label>
+                    <Entry
+                    Placeholder="Longitude"
+                    Text="{Binding Longitude}" Grid.Column="1" Grid.Row="3"  TextColor="Black"/>
+                    <Label Text="Picture" Grid.Column="0" Grid.Row="4"  FontAttributes="Bold" TextColor="White"></Label>
+                    <Entry
+                    Placeholder="Picture"
+                    VerticalOptions="FillAndExpand"
+                    Text="{Binding Picture}" Grid.Row="5"
+                        Grid.ColumnSpan="2" TextColor="Black"/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

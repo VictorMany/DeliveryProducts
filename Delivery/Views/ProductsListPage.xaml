@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Delivery.Views.ProductsListPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Nuevo" Command="{Binding NewCommand}" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+
+        <FlexLayout x:Name="ItemsCollectionView"
+                 BindableLayout.ItemsSource="{Binding ListProducts}"
+                 Direction="Row"
+                 AlignContent="Start"
+                 JustifyContent="SpaceAround"
+                 Wrap="Wrap"
+                 Margin="5,5">
+
+            <BindableLayout.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Padding="10"
+                                 WidthRequest="100"
+                                 HeightRequest="100">
+                        <Label 
+                               Text="NAME"
+                                   TextColor="White"
+                                   ></Label>
+                        <Label Text="{Binding Name}"   
+                                LineBreakMode="NoWrap" 
+                                Style="{DynamicResource ListItemTextStyle}" 
+                                FontSize="16"
+                               TextColor="White"
+                              />
+                        <Label Text="Price" TextColor="White" FontSize="16"  
+                              ></Label>
+                        <Label Text="{Binding Price}" 
+                                LineBreakMode="NoWrap"
+                                Style="{DynamicResource ListItemDetailTextStyle}"
+                                FontSize="13"
+                               TextColor="White"
+                               />
+                        <Image
+                            Source="{Binding PictureBase64}"
+                            HeightRequest="200"
+                            HorizontalOptions="Center"
+                            >
+                        </Image>
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding parent.SelectCommand}"
+                                                  CommandParameter="{Binding ID}">
+                            
+                            </TapGestureRecognizer>
+                        </StackLayout.GestureRecognizers>
+                    </StackLayout>
+                    
+                </DataTemplate>
+            </BindableLayout.ItemTemplate>
+        </FlexLayout>
+    </ContentPage.Content>
+</ContentPage>

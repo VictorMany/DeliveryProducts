@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Delivery.Views.DetailProduct">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" Command="{Binding CommandAddToCart}" />
+        <ToolbarItem Text="Editar" Command="{Binding CommandEdit}" />
+        <ToolbarItem Text="Borrar" Command="{Binding CommandDelete}" />
+    </ContentPage.ToolbarItems>
+
+    <Grid BackgroundColor="Red">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="500" />
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+
+        <Image Grid.Row="0"
+               BackgroundColor="Blue"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" 
+               Margin="10"/>
+       
+        <Label Grid.Row="1"
+               BackgroundColor="Blue"
+               Text="HOLA"
+               Margin="10, 0, 10, 0"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"               
+               />
+       
+        <Label Grid.Row="2"
+               BackgroundColor="DarkBlue"
+               Text="HOLA"
+               Margin="10,0,10,0"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"  
+                />
+        
+    </Grid>
+</ContentPage>
