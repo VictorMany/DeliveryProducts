@@ -1,4 +1,6 @@
-﻿using Delivery.Services;
+﻿using Delivery.Models;
+using Delivery.Services;
+using Delivery.Views;
 using Plugin.Media;
 using System;
 using System.Collections.Generic;
@@ -14,6 +16,19 @@ namespace Delivery.ViewModels
 
         Command _SelectPictureCommand;
         public Command SelectPictureCommand => _SelectPictureCommand ?? (_SelectPictureCommand = new Command(SelectPictureAction));
+
+
+        ProductModel productSelected;
+        public ProductModel ProductSelected
+        {
+            get => productSelected;
+            set => SetProperty(ref productSelected, value);
+        }
+        public EditProductViewModel()
+        {
+            productSelected = new ProductModel();
+        }
+
 
 
         string _ImageUrl;
@@ -73,5 +88,9 @@ namespace Delivery.ViewModels
 
             ImageUrl = await new ImageService().ConvertImageFileToBase64(file.Path);
         }
+
+
+
+       
     }
 }

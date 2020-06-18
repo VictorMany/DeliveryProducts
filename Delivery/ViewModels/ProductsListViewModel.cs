@@ -1,7 +1,11 @@
 ﻿using Delivery.Models;
+using Delivery.Services;
 using Delivery.Views;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Diagnostics;
+using System.Linq;
 using System.Text;
 using Xamarin.Forms;
 
@@ -13,13 +17,20 @@ namespace Delivery.ViewModels
         Command _selectCommand;
         public Command SelectCommand => _selectCommand ?? (_selectCommand = new Command(SelectAction));
 
+        Command _seeCommand;
+        public Command SeeCartCommand => _seeCommand ?? (_seeCommand = new Command(SeeAction));
+
+        Command _NewProductCommand;
+        public Command NewProductCommand => _NewProductCommand ?? (_NewProductCommand = new Command(NewAction)); 
+      
+
         List<ProductModel> listProducts;
 
         public ProductsListViewModel() 
         {
             ProductModel.staticParent = this;
 
-            listProducts = new List<ProductModel>()
+            /*listProducts = new List<ProductModel>()
             {
                 new ProductModel
                 {
@@ -50,7 +61,8 @@ namespace Delivery.ViewModels
                     Price = 12
                 }
             };
-            ListProducts = listProducts;
+            ListProducts = listProducts;*/
+            GetListProducts();
             IsBusy = false;
         }
 
@@ -69,14 +81,40 @@ namespace Delivery.ViewModels
             set => SetProperty(ref _IsBusy, value);
         }
 
-        private async void SelectAction(object obj)
+        public async void GetListProducts()
         {
-            //Id 
+            try
+            {
+                ApiResponse response = await new ApiService().GetDataAsync<ProductModel>("product");
+                if (response != null || response.Result != null)
+                {
+                    ObservableCollection<ProductModel> productCollection = (ObservableCollection<ProductModel>)response.Result;
+                    ListProducts = productCollection.ToList();
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+            }
+        }
+
+
+        private async void SelectAction(object obj)  //Nos va a llevar al detail del producto
+        {
+            //Id del producto seleccionado 
             int a = (int)obj;
             //oBTENER EL OBJ a partir de l Id que ya tenemos 
-
-            // await Application.Current.MainPage.DisplayAlert("Hola", a.ToString(), "OK");
             await MenuPage.menuPages.Detail.Navigation.PushAsync(new DetailProduct());
+        }
+
+        private async void SeeAction()  //Nos va a llevar al pedido que estamos generando en este momento
+        {
+            await MenuPage.menuPages.Detail.Navigation.PushAsync(new OrderPage());
+        }
+
+        public async void NewAction()
+        {
+            await MenuPage.menuPages.Detail.Navigation.PushAsync(new EditProductPage());
         }
     }
 }

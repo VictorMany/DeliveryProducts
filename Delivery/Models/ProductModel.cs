@@ -15,10 +15,13 @@ namespace Delivery.Models
 
         public static ProductsListViewModel staticParent { get; set; }
         public ProductsListViewModel parent { get; set; }
+        public static OrderViewModel staticParent2 { get; set; }
+        public OrderViewModel parent2 { get; set; }
+
         public ProductModel()
         {
             parent = staticParent;
+            parent2 = staticParent2;
         }
     }
-
 }

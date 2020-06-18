@@ -9,14 +9,26 @@
             x:Class="Delivery.Views.ProductsListPage">
     <ContentPage.ToolbarItems>
         <ToolbarItem
-            Text="Nuevo"
-            Command="{Binding NewCommand}">
+            Text="Ver Carrito"
+            Command="{Binding SeeCartCommand}">
             <ToolbarItem.IconImageSource>
                 <OnPlatform
                     x:TypeArguments="ImageSource">
                     <On
                         Platform="Android, UWP"
                         Value="carrito_principal.png"/>
+                </OnPlatform>
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
+        <ToolbarItem
+            Text="Nuevo Producto"
+            Command="{Binding NewProductCommand}">
+            <ToolbarItem.IconImageSource>
+                <OnPlatform
+                    x:TypeArguments="ImageSource">
+                    <On
+                        Platform="Android, UWP"
+                        Value="add_Product.png"/>
                 </OnPlatform>
             </ToolbarItem.IconImageSource>
         </ToolbarItem>

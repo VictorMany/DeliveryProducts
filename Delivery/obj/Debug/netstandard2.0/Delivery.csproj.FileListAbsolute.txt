@@ -19,11 +19,15 @@ C:\Users\victo\Desktop\4 SEMESTRE\PROGRAMACION MULTIPLATAFORMA\Entrega Final\Del
 C:\Users\victo\Desktop\4 SEMESTRE\PROGRAMACION MULTIPLATAFORMA\Entrega Final\DeliveryProducts\Delivery\bin\Debug\netstandard2.0\Delivery.dll
 C:\Users\victo\Desktop\4 SEMESTRE\PROGRAMACION MULTIPLATAFORMA\Entrega Final\DeliveryProducts\Delivery\bin\Debug\netstandard2.0\ref\Delivery.dll
 C:\Users\victo\Desktop\4 SEMESTRE\PROGRAMACION MULTIPLATAFORMA\Entrega Final\DeliveryProducts\Delivery\bin\Debug\netstandard2.0\Delivery.pdb
+C:\Users\victo\Desktop\4 SEMESTRE\PROGRAMACION MULTIPLATAFORMA\Entrega Final\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Delivery.csprojAssemblyReference.cache
 C:\Users\victo\Desktop\4 SEMESTRE\PROGRAMACION MULTIPLATAFORMA\Entrega Final\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\victo\Desktop\4 SEMESTRE\PROGRAMACION MULTIPLATAFORMA\Entrega Final\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\victo\Desktop\4 SEMESTRE\PROGRAMACION MULTIPLATAFORMA\Entrega Final\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\ConfirmOrderPage.xaml.g.cs
 C:\Users\victo\Desktop\4 SEMESTRE\PROGRAMACION MULTIPLATAFORMA\Entrega Final\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\DetailProduct.xaml.g.cs
 C:\Users\victo\Desktop\4 SEMESTRE\PROGRAMACION MULTIPLATAFORMA\Entrega Final\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\EditProductPage.xaml.g.cs
+C:\Users\victo\Desktop\4 SEMESTRE\PROGRAMACION MULTIPLATAFORMA\Entrega Final\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\MapPage.xaml.g.cs
 C:\Users\victo\Desktop\4 SEMESTRE\PROGRAMACION MULTIPLATAFORMA\Entrega Final\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\MenuPage.xaml.g.cs
+C:\Users\victo\Desktop\4 SEMESTRE\PROGRAMACION MULTIPLATAFORMA\Entrega Final\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\OrderPage.xaml.g.cs
 C:\Users\victo\Desktop\4 SEMESTRE\PROGRAMACION MULTIPLATAFORMA\Entrega Final\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\ProductsListPage.xaml.g.cs
 C:\Users\victo\Desktop\4 SEMESTRE\PROGRAMACION MULTIPLATAFORMA\Entrega Final\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Delivery.csproj.CoreCompileInputs.cache
 C:\Users\victo\Desktop\4 SEMESTRE\PROGRAMACION MULTIPLATAFORMA\Entrega Final\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Delivery.AssemblyInfoInputs.cache
@@ -32,4 +36,3 @@ C:\Users\victo\Desktop\4 SEMESTRE\PROGRAMACION MULTIPLATAFORMA\Entrega Final\Del
 C:\Users\victo\Desktop\4 SEMESTRE\PROGRAMACION MULTIPLATAFORMA\Entrega Final\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Delivery.dll
 C:\Users\victo\Desktop\4 SEMESTRE\PROGRAMACION MULTIPLATAFORMA\Entrega Final\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\ref\Delivery.dll
 C:\Users\victo\Desktop\4 SEMESTRE\PROGRAMACION MULTIPLATAFORMA\Entrega Final\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Delivery.pdb
-C:\Users\victo\Desktop\4 SEMESTRE\PROGRAMACION MULTIPLATAFORMA\Entrega Final\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Delivery.csprojAssemblyReference.cache

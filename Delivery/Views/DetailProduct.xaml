@@ -56,24 +56,18 @@
             Source="{Binding Product.PictureBase64, Converter={StaticResource ImageConverter}}"
             Grid.Row="0"
             Margin="10"
-            HorizontalOptions="Center"
-            />
-
+            HorizontalOptions="Center"/>
         <Label Grid.Row="1"
                BackgroundColor="Blue"
                Text="HOLA"
                Margin="10, 0, 10, 0"
                HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center"               
-               />
-       
+               VerticalTextAlignment="Center"/>
         <Label Grid.Row="2"
                BackgroundColor="DarkBlue"
                Text="HOLA"
                Margin="10,0,10,0"
                HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center"  
-                />
-        
+               VerticalTextAlignment="Center"/>
     </Grid>
 </ContentPage>

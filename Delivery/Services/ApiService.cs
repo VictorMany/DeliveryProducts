@@ -1,6 +1,11 @@
-﻿using System;
+﻿using Delivery.Models;
+using System;
 using System.Collections.Generic;
+using System.Net.Http;
+using Newtonsoft.Json;
+using System.Collections.ObjectModel;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Delivery.Services
 {
@@ -8,7 +13,7 @@ namespace Delivery.Services
     {
         private string ApiUrl = "https://azuresqlapidelivery.azurewebsites.net/";
 
-        /*public async Task<ApiResponse> GetDataAsync<T>(string controller)
+        public async Task<ApiResponse> GetDataAsync<T>(string controller)
         {
             try
             {
@@ -47,7 +52,7 @@ namespace Delivery.Services
             }
         }
 
-        public async Task<ApiResponse> GetDataAsyncByID<T>(string controller, int id)
+        /*public async Task<ApiResponse> GetDataAsyncByID<T>(string controller, int id)
         {
             try
             {
@@ -55,7 +60,7 @@ namespace Delivery.Services
                 {
                     BaseAddress = new System.Uri(ApiUrl)
                 };
-                var response = await client.GetAsync(controller+"/"+id);
+                var response = await client.GetAsync(controller + "/" + id);
                 var result = await response.Content.ReadAsStringAsync();
 
                 if (!response.IsSuccessStatusCode)

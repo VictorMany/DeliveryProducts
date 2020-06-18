@@ -230,6 +230,15 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.8-rel-28605-00": {
         "type": "package",
         "dependencies": {
@@ -390,13 +399,29 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Maps/4.7.0.968": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.7.0.968"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.dll": {}
+        }
+      },
       "Delivery/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.7.0.968"
+          "Xamarin.Forms": "4.7.0.968",
+          "Xamarin.Forms.Maps": "4.7.0.968"
         },
         "compile": {
           "bin/placeholder/Delivery.dll": {}
@@ -634,6 +659,15 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.8-rel-28605-00": {
@@ -963,13 +997,29 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Maps/4.7.0.968": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.7.0.968"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.dll": {}
+        }
+      },
       "Delivery/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.7.0.968"
+          "Xamarin.Forms": "4.7.0.968",
+          "Xamarin.Forms.Maps": "4.7.0.968"
         },
         "compile": {
           "bin/placeholder/Delivery.dll": {}
@@ -1207,6 +1257,15 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.2.10": {
@@ -1537,13 +1596,29 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Maps/4.7.0.968": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.7.0.968"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.dll": {}
+        }
+      },
       "Delivery/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.7.0.968"
+          "Xamarin.Forms": "4.7.0.968",
+          "Xamarin.Forms.Maps": "4.7.0.968"
         },
         "compile": {
           "bin/placeholder/Delivery.dll": {}
@@ -1781,6 +1856,15 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.8-rel-28605-00": {
@@ -2108,13 +2192,29 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Maps/4.7.0.968": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.7.0.968"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.dll": {}
+        }
+      },
       "Delivery/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.7.0.968"
+          "Xamarin.Forms": "4.7.0.968",
+          "Xamarin.Forms.Maps": "4.7.0.968"
         },
         "compile": {
           "bin/placeholder/Delivery.dll": {}
@@ -2352,6 +2452,15 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.8-rel-28605-00": {
@@ -2681,13 +2790,29 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Maps/4.7.0.968": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.7.0.968"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.dll": {}
+        }
+      },
       "Delivery/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.7.0.968"
+          "Xamarin.Forms": "4.7.0.968",
+          "Xamarin.Forms.Maps": "4.7.0.968"
         },
         "compile": {
           "bin/placeholder/Delivery.dll": {}
@@ -2925,6 +3050,15 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.8-rel-28605-00": {
@@ -3255,13 +3389,29 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Maps/4.7.0.968": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.7.0.968"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.dll": {}
+        }
+      },
       "Delivery/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.7.0.968"
+          "Xamarin.Forms": "4.7.0.968",
+          "Xamarin.Forms.Maps": "4.7.0.968"
         },
         "compile": {
           "bin/placeholder/Delivery.dll": {}
@@ -3499,6 +3649,15 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.8-rel-28605-00": {
@@ -3828,13 +3987,29 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Maps/4.7.0.968": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.7.0.968"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.dll": {}
+        }
+      },
       "Delivery/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.7.0.968"
+          "Xamarin.Forms": "4.7.0.968",
+          "Xamarin.Forms.Maps": "4.7.0.968"
         },
         "compile": {
           "bin/placeholder/Delivery.dll": {}
@@ -4072,6 +4247,15 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.8-rel-28605-00": {
@@ -4402,13 +4586,29 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Maps/4.7.0.968": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.7.0.968"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.dll": {}
+        }
+      },
       "Delivery/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.7.0.968"
+          "Xamarin.Forms": "4.7.0.968",
+          "Xamarin.Forms.Maps": "4.7.0.968"
         },
         "compile": {
           "bin/placeholder/Delivery.dll": {}
@@ -4959,6 +5159,37 @@
         "lib/netstandard1.0/_._",
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
       ]
     },
     "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.2.10": {
@@ -9301,6 +9532,43 @@
         "xamarin.forms.nuspec"
       ]
     },
+    "Xamarin.Forms.Maps/4.7.0.968": {
+      "sha512": "TKi35iPTFNFuF+Jqa/Qlvl/3d3JalSlecQN0wrf+iNO2tTQm+MdedMnIc19Dmtrbjprs6N/F7kRRehAe3+z7hw==",
+      "type": "package",
+      "path": "xamarin.forms.maps/4.7.0.968",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Assets/xamarin_128x128.png",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Maps.Android.dll",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Maps.dll",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Maps.xml",
+        "lib/MonoAndroid90/Xamarin.Forms.Maps.Android.dll",
+        "lib/MonoAndroid90/Xamarin.Forms.Maps.dll",
+        "lib/MonoAndroid90/Xamarin.Forms.Maps.xml",
+        "lib/Xamarin.Mac/Xamarin.Forms.Maps.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Maps.macOS.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Maps.xml",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.xml",
+        "lib/netstandard1.0/Xamarin.Forms.Maps.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Maps.xml",
+        "lib/netstandard2.0/Xamarin.Forms.Maps.dll",
+        "lib/netstandard2.0/Xamarin.Forms.Maps.xml",
+        "lib/tizen40/Xamarin.Forms.Maps.Tizen.dll",
+        "lib/tizen40/Xamarin.Forms.Maps.dll",
+        "lib/tizen40/Xamarin.Forms.Maps.xml",
+        "lib/uap10.0.14393/Xamarin.Forms.Maps.UWP.dll",
+        "lib/uap10.0.14393/Xamarin.Forms.Maps.UWP.pri",
+        "lib/uap10.0.14393/Xamarin.Forms.Maps.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.pri",
+        "lib/uap10.0.16299/Xamarin.Forms.Maps.dll",
+        "xamarin.forms.maps.4.7.0.968.nupkg.sha512",
+        "xamarin.forms.maps.nuspec"
+      ]
+    },
     "Delivery/1.0.0": {
       "type": "project",
       "path": "../Delivery/Delivery.csproj",
@@ -9312,7 +9580,8 @@
       "Delivery >= 1.0.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.10",
       "Xamarin.Essentials >= 1.5.3.2",
-      "Xamarin.Forms >= 4.7.0.968"
+      "Xamarin.Forms >= 4.7.0.968",
+      "Xamarin.Forms.Maps >= 4.7.0.968"
     ]
   },
   "packageFolders": {
@@ -9368,6 +9637,10 @@
             "version": "[1.5.3.2, )"
           },
           "Xamarin.Forms": {
+            "target": "Package",
+            "version": "[4.7.0.968, )"
+          },
+          "Xamarin.Forms.Maps": {
             "target": "Package",
             "version": "[4.7.0.968, )"
           }

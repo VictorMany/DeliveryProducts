@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:renders="clr-namespace:Delivery.Renders"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             mc:Ignorable="d"
+             x:Class="Delivery.Views.MapPage">
+     <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="4*" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+            
+            <renders:CustomMap
+                x:Name="MapTrip"
+                Grid.RowSpan="3"/>
+            <BoxView
+                Grid.Row="1"
+                BackgroundColor="White"
+                Opacity=".7" />
+            <StackLayout
+                Padding="10"
+                Grid.Row="1">
+                <Label
+                    x:Name="Title"
+                    HorizontalOptions="Center" />
+                <Label
+                    x:Name="Date"
+                    HorizontalOptions="Center" />
+                <Label
+                    x:Name="Rating"
+                    HorizontalOptions="Center" />
+                <Label
+                    x:Name="Notes"
+                    HorizontalOptions="Center" />
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
