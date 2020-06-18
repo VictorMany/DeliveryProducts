@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\Delivery\\Delivery.Android\\Delivery.Android.csproj": {}
+    "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\DeliveryProducts\\Delivery.Android\\Delivery.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\Delivery\\Delivery.Android\\Delivery.Android.csproj": {
+    "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\DeliveryProducts\\Delivery.Android\\Delivery.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\Delivery\\Delivery.Android\\Delivery.Android.csproj",
+        "projectUniqueName": "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\DeliveryProducts\\Delivery.Android\\Delivery.Android.csproj",
         "projectName": "Delivery.Android",
-        "projectPath": "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\Delivery\\Delivery.Android\\Delivery.Android.csproj",
+        "projectPath": "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\DeliveryProducts\\Delivery.Android\\Delivery.Android.csproj",
         "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\Delivery\\Delivery.Android\\obj\\",
+        "outputPath": "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\DeliveryProducts\\Delivery.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\Delivery\\Delivery\\Delivery.csproj": {
-                "projectPath": "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\Delivery\\Delivery\\Delivery.csproj"
+              "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\DeliveryProducts\\Delivery\\Delivery.csproj": {
+                "projectPath": "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\DeliveryProducts\\Delivery\\Delivery.csproj"
               }
             }
           }
@@ -44,24 +44,24 @@
           "dependencies": {
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.3.1, )"
+              "version": "[1.5.3.2, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.4.0.991265, )"
+              "version": "[4.7.0.968, )"
             }
           }
         }
       }
     },
-    "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\Delivery\\Delivery\\Delivery.csproj": {
+    "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\DeliveryProducts\\Delivery\\Delivery.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\Delivery\\Delivery\\Delivery.csproj",
+        "projectUniqueName": "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\DeliveryProducts\\Delivery\\Delivery.csproj",
         "projectName": "Delivery",
-        "projectPath": "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\Delivery\\Delivery\\Delivery.csproj",
+        "projectPath": "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\DeliveryProducts\\Delivery\\Delivery.csproj",
         "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\Delivery\\Delivery\\obj\\",
+        "outputPath": "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\DeliveryProducts\\Delivery\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -98,13 +98,17 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "Xam.Plugin.Media": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.5.3.2, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.6.0.967, )"
+              "version": "[4.7.0.968, )"
             }
           },
           "imports": [

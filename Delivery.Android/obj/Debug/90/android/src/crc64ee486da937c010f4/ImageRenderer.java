@@ -10,7 +10,9 @@ public class ImageRenderer
 	public static final String __md_methods;
 	static {
 		__md_methods = 
+			"n_onLayout:(ZIIII)V:GetOnLayout_ZIIIIHandler\n" +
 			"n_invalidate:()V:GetInvalidateHandler\n" +
+			"n_draw:(Landroid/graphics/Canvas;)V:GetDraw_Landroid_graphics_Canvas_Handler\n" +
 			"n_onTouchEvent:(Landroid/view/MotionEvent;)Z:GetOnTouchEvent_Landroid_view_MotionEvent_Handler\n" +
 			"";
 		mono.android.Runtime.register ("Xamarin.Forms.Platform.Android.FastRenderers.ImageRenderer, Xamarin.Forms.Platform.Android", ImageRenderer.class, __md_methods);
@@ -49,12 +51,28 @@ public class ImageRenderer
 	}
 
 
+	public void onLayout (boolean p0, int p1, int p2, int p3, int p4)
+	{
+		n_onLayout (p0, p1, p2, p3, p4);
+	}
+
+	private native void n_onLayout (boolean p0, int p1, int p2, int p3, int p4);
+
+
 	public void invalidate ()
 	{
 		n_invalidate ();
 	}
 
 	private native void n_invalidate ();
+
+
+	public void draw (android.graphics.Canvas p0)
+	{
+		n_draw (p0);
+	}
+
+	private native void n_draw (android.graphics.Canvas p0);
 
 
 	public boolean onTouchEvent (android.view.MotionEvent p0)

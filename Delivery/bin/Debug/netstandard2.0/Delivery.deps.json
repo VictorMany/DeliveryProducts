@@ -10,8 +10,9 @@
       "Delivery/1.0.0": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
+          "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.6.0.967"
+          "Xamarin.Forms": "4.7.0.968"
         },
         "runtime": {
           "Delivery.dll": {}
@@ -31,6 +32,17 @@
           }
         }
       },
+      "Xam.Plugin.Media/5.0.1": {
+        "dependencies": {
+          "Xamarin.Essentials": "1.5.3.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Plugin.Media.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Xamarin.Essentials/1.5.3.2": {
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -42,19 +54,19 @@
           }
         }
       },
-      "Xamarin.Forms/4.6.0.967": {
+      "Xamarin.Forms/4.7.0.968": {
         "runtime": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.6.0.526"
+            "fileVersion": "4.7.0.385"
           },
           "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.6.0.526"
+            "fileVersion": "4.7.0.385"
           },
           "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.6.0.526"
+            "fileVersion": "4.7.0.385"
           }
         }
       }
@@ -87,6 +99,13 @@
       "path": "system.numerics.vectors/4.5.0",
       "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
     },
+    "Xam.Plugin.Media/5.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UUR31EEnhDVa4IXgVfQIAL3u9v6YAyppsb5UlO9MNJ4quGGkfcWX++JexjB1nMGqvCzsjAT2t32drKDIXoW4SQ==",
+      "path": "xam.plugin.media/5.0.1",
+      "hashPath": "xam.plugin.media.5.0.1.nupkg.sha512"
+    },
     "Xamarin.Essentials/1.5.3.2": {
       "type": "package",
       "serviceable": true,
@@ -94,12 +113,12 @@
       "path": "xamarin.essentials/1.5.3.2",
       "hashPath": "xamarin.essentials.1.5.3.2.nupkg.sha512"
     },
-    "Xamarin.Forms/4.6.0.967": {
+    "Xamarin.Forms/4.7.0.968": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-t+ONiIyl1J2ISXkTvuexIRxsxUxOUUsqlP94ZLyuSatq5zHpEBFYECppJRHwRw40emUt3CgDdHFq80WS0jRMJQ==",
-      "path": "xamarin.forms/4.6.0.967",
-      "hashPath": "xamarin.forms.4.6.0.967.nupkg.sha512"
+      "sha512": "sha512-VvHI/VXyDZcCLYXywh9A8gVtldD8XCLR8hujZVdlKGh87HIXAUW0b+uLFsvyMB8COwNce0w56ycgD/tXtLgFRA==",
+      "path": "xamarin.forms/4.7.0.968",
+      "hashPath": "xamarin.forms.4.7.0.968.nupkg.sha512"
     }
   }
 }

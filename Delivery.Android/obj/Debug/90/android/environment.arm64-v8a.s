@@ -3,7 +3,7 @@
 	.section	.rodata..L.str.1,"aMS",@progbits,1
 	.type	.L.str.1, @object
 .L.str.1:
-	.asciz	"com.companyname.delivery"
+	.asciz	"com.companyname.apptrips"
 	.size	.L.str.1, 25
 	.section	.data.application_config,"aw",@progbits
 	.type	application_config, @object
@@ -70,7 +70,7 @@ mono_aot_mode_name:
 	.section	.rodata..L.str.8,"aMS",@progbits,1
 	.type	.L.str.8, @object
 .L.str.8:
-	.asciz	"49c1cf1a-d7e6-4ae7-99d9-27c08b0b1dea"
+	.asciz	"8112d740-471b-4f59-9ec9-2f29c15cea37"
 	.size	.L.str.8, 37
 	.section	.rodata..L.str.9,"aMS",@progbits,1
 	.type	.L.str.9, @object

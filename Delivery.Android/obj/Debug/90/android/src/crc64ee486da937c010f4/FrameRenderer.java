@@ -11,6 +11,7 @@ public class FrameRenderer
 	static {
 		__md_methods = 
 			"n_onLayout:(ZIIII)V:GetOnLayout_ZIIIIHandler\n" +
+			"n_draw:(Landroid/graphics/Canvas;)V:GetDraw_Landroid_graphics_Canvas_Handler\n" +
 			"n_onTouchEvent:(Landroid/view/MotionEvent;)Z:GetOnTouchEvent_Landroid_view_MotionEvent_Handler\n" +
 			"";
 		mono.android.Runtime.register ("Xamarin.Forms.Platform.Android.FastRenderers.FrameRenderer, Xamarin.Forms.Platform.Android", FrameRenderer.class, __md_methods);
@@ -47,6 +48,14 @@ public class FrameRenderer
 	}
 
 	private native void n_onLayout (boolean p0, int p1, int p2, int p3, int p4);
+
+
+	public void draw (android.graphics.Canvas p0)
+	{
+		n_draw (p0);
+	}
+
+	private native void n_draw (android.graphics.Canvas p0);
 
 
 	public boolean onTouchEvent (android.view.MotionEvent p0)

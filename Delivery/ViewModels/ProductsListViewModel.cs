@@ -34,9 +34,21 @@ namespace Delivery.ViewModels
                     Name= "Anahi",
                     PictureBase64= "",
                     Price = 12
+                },
+                 new ProductModel
+                {
+                    ID = 1,
+                    Name= "Javier",
+                    PictureBase64= "",
+                    Price = 34
+                },
+                 new ProductModel
+                {
+                    ID = 2,
+                    Name= "Anahi",
+                    PictureBase64= "",
+                    Price = 12
                 }
-
-
             };
             ListProducts = listProducts;
             IsBusy = false;

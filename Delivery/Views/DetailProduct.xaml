@@ -3,27 +3,62 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:converter="clr-namespace:Delivery.Converters"
              mc:Ignorable="d"
              x:Class="Delivery.Views.DetailProduct">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converter:ImageConverter x:Key="ImageConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add" Command="{Binding CommandAddToCart}" />
-        <ToolbarItem Text="Editar" Command="{Binding CommandEdit}" />
-        <ToolbarItem Text="Borrar" Command="{Binding CommandDelete}" />
+        <ToolbarItem Text="Add" Command="{Binding CommandAddToCart}" >
+            <ToolbarItem.IconImageSource>
+                <OnPlatform
+                    x:TypeArguments="ImageSource">
+                    <On
+                        Platform="Android, UWP"
+                        Value="agregar_carrito.png"/>
+                </OnPlatform>
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
+        <ToolbarItem Text="Editar" Command="{Binding CommandEdit}">
+            <ToolbarItem.IconImageSource>
+                <OnPlatform
+                    x:TypeArguments="ImageSource">
+                    <On
+                        Platform="Android, UWP"
+                        Value="edit.png"/>
+                </OnPlatform>
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
+
+        <ToolbarItem Text="Borrar" Command="{Binding CommandDelete}">
+            <ToolbarItem.IconImageSource>
+                <OnPlatform
+                    x:TypeArguments="ImageSource">
+                    <On
+                        Platform="Android, UWP"
+                        Value="trash.png"/>
+                </OnPlatform>
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
     </ContentPage.ToolbarItems>
 
-    <Grid BackgroundColor="Red">
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="500" />
             <RowDefinition Height="60"/>
             <RowDefinition Height="60"/>
         </Grid.RowDefinitions>
 
-        <Image Grid.Row="0"
-               BackgroundColor="Blue"
-               HorizontalOptions="Center"
-               VerticalOptions="Center" 
-               Margin="10"/>
-       
+        <Image
+            Source="{Binding Product.PictureBase64, Converter={StaticResource ImageConverter}}"
+            Grid.Row="0"
+            Margin="10"
+            HorizontalOptions="Center"
+            />
+
         <Label Grid.Row="1"
                BackgroundColor="Blue"
                Text="HOLA"

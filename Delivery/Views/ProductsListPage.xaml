@@ -1,61 +1,102 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
-             x:Class="Delivery.Views.ProductsListPage">
+<ContentPage 
+            xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            xmlns:converter="clr-namespace:Delivery.Converters"
+            mc:Ignorable="d"
+            x:Class="Delivery.Views.ProductsListPage">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Nuevo" Command="{Binding NewCommand}" />
+        <ToolbarItem
+            Text="Nuevo"
+            Command="{Binding NewCommand}">
+            <ToolbarItem.IconImageSource>
+                <OnPlatform
+                    x:TypeArguments="ImageSource">
+                    <On
+                        Platform="Android, UWP"
+                        Value="carrito_principal.png"/>
+                </OnPlatform>
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
+        
     </ContentPage.ToolbarItems>
-
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converter:ImageConverter x:Key="ImageConverter"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
-
-        <FlexLayout x:Name="ItemsCollectionView"
-                 BindableLayout.ItemsSource="{Binding ListProducts}"
-                 Direction="Row"
-                 AlignContent="Start"
-                 JustifyContent="SpaceAround"
-                 Wrap="Wrap"
-                 Margin="5,5">
-
+        <FlexLayout 
+            x:Name="ItemsCollectionView"
+            BindableLayout.ItemsSource="{Binding ListProducts}"
+            Direction="Row"
+            AlignContent="Start"
+            JustifyContent="SpaceAround"
+            Wrap="Wrap"
+            Margin="5,5"
+           >
             <BindableLayout.ItemTemplate>
                 <DataTemplate>
-                    <StackLayout Padding="10"
-                                 WidthRequest="100"
-                                 HeightRequest="100">
-                        <Label 
-                               Text="NAME"
-                                   TextColor="White"
-                                   ></Label>
-                        <Label Text="{Binding Name}"   
-                                LineBreakMode="NoWrap" 
-                                Style="{DynamicResource ListItemTextStyle}" 
-                                FontSize="16"
-                               TextColor="White"
-                              />
-                        <Label Text="Price" TextColor="White" FontSize="16"  
-                              ></Label>
-                        <Label Text="{Binding Price}" 
-                                LineBreakMode="NoWrap"
-                                Style="{DynamicResource ListItemDetailTextStyle}"
-                                FontSize="13"
-                               TextColor="White"
-                               />
-                        <Image
-                            Source="{Binding PictureBase64}"
-                            HeightRequest="200"
-                            HorizontalOptions="Center"
-                            >
-                        </Image>
-                        <StackLayout.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding parent.SelectCommand}"
-                                                  CommandParameter="{Binding ID}">
+
+                    
+                    <StackLayout   
+                        Padding="2 , 10, 2, 10"
+                        WidthRequest="190"
+                        HeightRequest="140"
+                        VerticalOptions="CenterAndExpand"
+                       >
+                        <Grid BackgroundColor="#58CDFC"
+                               Padding="15">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="60"></RowDefinition>
+                                <RowDefinition Height="30"></RowDefinition>
+                            </Grid.RowDefinitions>
                             
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                           
+                        <Label 
+                            Text="{Binding Name}"   
+                            LineBreakMode="NoWrap" 
+                            Style="{DynamicResource ListItemTextStyle}" 
+                          
+                            TextColor="White"
+                            Grid.Column="0"
+                            Grid.Row="0"
+                            FontSize="Large"
+                            FontAttributes="Bold"
+                            />
+                       
+                        <Label  
+                            Text="{Binding Price}" 
+                            LineBreakMode="NoWrap"
+                            Style="{DynamicResource ListItemDetailTextStyle}"
+                         
+                            TextColor="White"
+                            Grid.Column="0"
+                            Grid.Row="1"
+                            FontSize="Large"
+                            FontAttributes="Bold"/>
+                        <Image
+                            Source="{Binding PictureBase64, Converter={StaticResource ImageConverter}}"
+                            Grid.Column="1"
+                            Grid.RowSpan="2"
+                           
+                            HorizontalOptions="Center"
+                            />
+
+                        </Grid>
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer 
+                                Command="{Binding parent.SelectCommand}"
+                                CommandParameter="{Binding ID}">
                             </TapGestureRecognizer>
                         </StackLayout.GestureRecognizers>
                     </StackLayout>
-                    
                 </DataTemplate>
             </BindableLayout.ItemTemplate>
         </FlexLayout>

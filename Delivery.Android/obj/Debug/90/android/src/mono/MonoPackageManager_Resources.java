@@ -5,6 +5,7 @@ public class MonoPackageManager_Resources {
 		"Delivery.Android.dll",
 		"Delivery.dll",
 		"FormsViewGroup.dll",
+		"Plugin.Media.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Core.Runtime.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",

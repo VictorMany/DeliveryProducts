@@ -1,4 +1,5 @@
 ﻿using Delivery.Models;
+using Delivery.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,10 +17,13 @@ namespace Delivery.Views
         public DetailProduct()
         {
             InitializeComponent();
+
+            BindingContext = new DetailViewModel();
         }
         public DetailProduct(ProductModel pm)
         {
             InitializeComponent();
+            BindingContext = new DetailViewModel();
         }
     }
 }

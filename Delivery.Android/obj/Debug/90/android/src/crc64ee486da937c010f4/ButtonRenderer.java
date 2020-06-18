@@ -14,6 +14,7 @@ public class ButtonRenderer
 	public static final String __md_methods;
 	static {
 		__md_methods = 
+			"n_draw:(Landroid/graphics/Canvas;)V:GetDraw_Landroid_graphics_Canvas_Handler\n" +
 			"n_onTouchEvent:(Landroid/view/MotionEvent;)Z:GetOnTouchEvent_Landroid_view_MotionEvent_Handler\n" +
 			"n_onLayout:(ZIIII)V:GetOnLayout_ZIIIIHandler\n" +
 			"n_onViewAttachedToWindow:(Landroid/view/View;)V:GetOnViewAttachedToWindow_Landroid_view_View_Handler:Android.Views.View/IOnAttachStateChangeListenerInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\n" +
@@ -48,6 +49,14 @@ public class ButtonRenderer
 		if (getClass () == ButtonRenderer.class)
 			mono.android.TypeManager.Activate ("Xamarin.Forms.Platform.Android.FastRenderers.ButtonRenderer, Xamarin.Forms.Platform.Android", "Android.Content.Context, Mono.Android:Android.Util.IAttributeSet, Mono.Android:System.Int32, mscorlib", this, new java.lang.Object[] { p0, p1, p2 });
 	}
+
+
+	public void draw (android.graphics.Canvas p0)
+	{
+		n_draw (p0);
+	}
+
+	private native void n_draw (android.graphics.Canvas p0);
 
 
 	public boolean onTouchEvent (android.view.MotionEvent p0)

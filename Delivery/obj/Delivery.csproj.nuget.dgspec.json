@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\Delivery\\Delivery\\Delivery.csproj": {}
+    "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\DeliveryProducts\\Delivery\\Delivery.csproj": {}
   },
   "projects": {
-    "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\Delivery\\Delivery\\Delivery.csproj": {
+    "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\DeliveryProducts\\Delivery\\Delivery.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\Delivery\\Delivery\\Delivery.csproj",
+        "projectUniqueName": "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\DeliveryProducts\\Delivery\\Delivery.csproj",
         "projectName": "Delivery",
-        "projectPath": "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\Delivery\\Delivery\\Delivery.csproj",
+        "projectPath": "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\DeliveryProducts\\Delivery\\Delivery.csproj",
         "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\Delivery\\Delivery\\obj\\",
+        "outputPath": "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\DeliveryProducts\\Delivery\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -48,13 +48,17 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "Xam.Plugin.Media": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.5.3.2, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.6.0.967, )"
+              "version": "[4.7.0.968, )"
             }
           },
           "imports": [

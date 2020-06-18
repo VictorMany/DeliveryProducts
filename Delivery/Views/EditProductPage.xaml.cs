@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Delivery.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,8 @@ namespace Delivery.Views
         public EditProductPage()
         {
             InitializeComponent();
+
+            BindingContext = new EditProductViewModel();
         }
     }
 }

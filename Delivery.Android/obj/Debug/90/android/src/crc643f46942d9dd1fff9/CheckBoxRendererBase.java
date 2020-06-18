@@ -12,7 +12,6 @@ public class CheckBoxRendererBase
 	public static final String __md_methods;
 	static {
 		__md_methods = 
-			"n_invalidate:()V:GetInvalidateHandler\n" +
 			"n_onFocusChange:(Landroid/view/View;Z)V:GetOnFocusChange_Landroid_view_View_ZHandler:Android.Views.View/IOnFocusChangeListenerInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\n" +
 			"n_onCheckedChanged:(Landroid/widget/CompoundButton;Z)V:GetOnCheckedChanged_Landroid_widget_CompoundButton_ZHandler:Android.Widget.CompoundButton/IOnCheckedChangeListenerInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\n" +
 			"";
@@ -42,14 +41,6 @@ public class CheckBoxRendererBase
 		if (getClass () == CheckBoxRendererBase.class)
 			mono.android.TypeManager.Activate ("Xamarin.Forms.Platform.Android.CheckBoxRendererBase, Xamarin.Forms.Platform.Android", "Android.Content.Context, Mono.Android:Android.Util.IAttributeSet, Mono.Android:System.Int32, mscorlib", this, new java.lang.Object[] { p0, p1, p2 });
 	}
-
-
-	public void invalidate ()
-	{
-		n_invalidate ();
-	}
-
-	private native void n_invalidate ();
 
 
 	public void onFocusChange (android.view.View p0, boolean p1)

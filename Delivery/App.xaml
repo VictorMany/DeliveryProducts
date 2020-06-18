@@ -6,6 +6,17 @@
              mc:Ignorable="d"
              x:Class="Delivery.App">
     <Application.Resources>
-
+        <ResourceDictionary>
+            <Color x:Key="NavigationBar">DarkBlue</Color>
+            <Style
+                TargetType="NavigationPage">
+                <Setter
+                    Property="BarBackgroundColor"
+                    Value="{StaticResource NavigationBar}" />
+                <Setter
+                    Property="BarTextColor"
+                    Value="White" />
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

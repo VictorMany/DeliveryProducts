@@ -11,7 +11,6 @@ public class CarouselViewRenderer
 	static {
 		__md_methods = 
 			"n_onInterceptTouchEvent:(Landroid/view/MotionEvent;)Z:GetOnInterceptTouchEvent_Landroid_view_MotionEvent_Handler\n" +
-			"n_onScrollStateChanged:(I)V:GetOnScrollStateChanged_IHandler\n" +
 			"";
 		mono.android.Runtime.register ("Xamarin.Forms.Platform.Android.CarouselViewRenderer, Xamarin.Forms.Platform.Android", CarouselViewRenderer.class, __md_methods);
 	}
@@ -47,14 +46,6 @@ public class CarouselViewRenderer
 	}
 
 	private native boolean n_onInterceptTouchEvent (android.view.MotionEvent p0);
-
-
-	public void onScrollStateChanged (int p0)
-	{
-		n_onScrollStateChanged (p0);
-	}
-
-	private native void n_onScrollStateChanged (int p0);
 
 	private java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)
