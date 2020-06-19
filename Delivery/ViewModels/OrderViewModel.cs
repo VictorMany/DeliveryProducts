@@ -29,14 +29,6 @@ namespace Delivery.ViewModels
             set => SetProperty(ref _ListProducts, value);
         }
 
-
-        bool _IsBusy;
-        public bool IsBusy
-        {
-            get => _IsBusy;
-            set => SetProperty(ref _IsBusy, value);
-        }
-
         List<ProductModel> listProducts;
         public OrderViewModel(){
 
@@ -60,17 +52,17 @@ namespace Delivery.ViewModels
                 },
                  new ProductModel
                 {
-                    ID = 1,
-                    Name= "Javier",
+                    ID = 3,
+                    Name= "Vic",
                     PictureBase64= "",
                     Price = 34
                 },
                  new ProductModel
                 {
-                    ID = 2,
-                    Name= "Anahi",
+                    ID = 4,
+                    Name= "Chris",
                     PictureBase64= "",
-                    Price = 12
+                    Price = -12
                 }
             };
             ListProductsOnCart = listProducts;

@@ -7,9 +7,10 @@
              x:Class="Delivery.Views.ConfirmOrderPage">
 
     <ContentPage.Content>
-        
+
         <Grid Margin="10">
             <Grid.RowDefinitions>
+                <RowDefinition Height="40"></RowDefinition>
                 <RowDefinition Height="40"></RowDefinition>
                 <RowDefinition Height="40"></RowDefinition>
                 <RowDefinition Height="40"></RowDefinition>
@@ -18,70 +19,116 @@
                 <RowDefinition ></RowDefinition>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="140"></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="1.61*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Frame Grid.Column="0" Grid.Row="0" BorderColor="DarkBlue" CornerRadius="5" 
+            <Frame 
+                Grid.Column="0" 
+                Grid.Row="0" 
+                BorderColor="DarkBlue" 
+                CornerRadius="5" 
                 Padding="0">
-                <Label BackgroundColor="Blue" 
-                        FontAttributes="Bold" 
-                       FontSize="Large"
-                       HorizontalTextAlignment="Center"
-                       TextColor="White"
-                       Text="Direccion"
-                       />
+                <Label
+                    Padding="5"
+                    BackgroundColor="Blue"
+                    FontAttributes="Bold"
+                    FontSize="Large"
+                    TextColor="White"
+                    Text="Dirección: "/>
             </Frame>
-            <Frame Grid.Column="1" Grid.Row="0" BorderColor="DarkBlue" CornerRadius="5" 
-                Padding="0">
-                <Entry />
-            </Frame>
-            <Frame Grid.Column="0" Grid.Row="1" BorderColor="DarkBlue" CornerRadius="5" 
-                Padding="0">
-                <Label BackgroundColor="Blue" 
-                        FontAttributes="Bold" 
-                       FontSize="Large"
-                       HorizontalTextAlignment="Center"
-                       TextColor="White" 
-                       Text="Latitude"/>
-            </Frame>
-            <Frame Grid.Column="1" Grid.Row="1"  BorderColor="DarkBlue" CornerRadius="5" 
+            <Frame 
+                Grid.Column="1" 
+                Grid.Row="0" 
+                BorderColor="DarkBlue" 
+                CornerRadius="5" 
                 Padding="0">
                 <Entry />
             </Frame>
-            <Frame Grid.Column="0" Grid.Row="2" BorderColor="DarkBlue" CornerRadius="5" 
+            <Frame 
+                Grid.Column="0" 
+                Grid.Row="1" 
+                BorderColor="DarkBlue" 
+                CornerRadius="5" 
                 Padding="0">
-                <Label BackgroundColor="Blue" 
-                       FontAttributes="Bold" 
-                       FontSize="Large"
-                       HorizontalTextAlignment="Center"
-                       TextColor="White"
-                       Text="Longitude"/>
+                <Label
+                    Padding="5"
+                    BackgroundColor="Blue"
+                    FontAttributes="Bold" 
+                    FontSize="Large"
+                    TextColor="White" 
+                    Text="Latitud:"/>
             </Frame>
-            <Frame Grid.Column="1" Grid.Row="2"  BorderColor="DarkBlue" CornerRadius="5" 
+            <Frame
+                Grid.Column="1" 
+                Grid.Row="1"  
+                BorderColor="DarkBlue" 
+                CornerRadius="5" 
+                Padding="0">
+                <Entry />
+            </Frame>
+            <Frame 
+                Grid.Column="0" 
+                Grid.Row="2" 
+                BorderColor="DarkBlue" 
+                CornerRadius="5" 
+                Padding="0">
+                <Label
+                    Padding="5"
+                    BackgroundColor="Blue"
+                    FontAttributes="Bold" 
+                    FontSize="Large"
+                    TextColor="White"
+                    Text="Longitud:"/>
+            </Frame>
+            <Frame 
+                Grid.Column="1" 
+                Grid.Row="2"  
+                BorderColor="DarkBlue" 
+                CornerRadius="5" 
                 Padding="0">
                 <Entry/>
             </Frame>
-
-            <DatePicker Grid.ColumnSpan="2" Grid.Row="3" BackgroundColor="DarkBlue" TextColor="White" FontAttributes="Bold" HorizontalOptions="FillAndExpand"/>
-            <Button Text="IR AL MAPA" 
+            <Frame
+                Grid.Row="3"
+                Grid.ColumnSpan="2"
+                CornerRadius="5"
+                Padding="0"
+                BackgroundColor="Blue">
+                <Label
+                    Padding="5"
+                    TextColor="White"
+                    FontSize="Large"
+                    HorizontalTextAlignment="Center"
+                    FontAttributes="Bold"
+                    Text="Fecha de Entrega aproximado:"/>
+            </Frame>
+            
+            
+            <!--Deberia ser label creo-->
+            <DatePicker 
+                Grid.ColumnSpan="2"
+                Grid.Row="4" 
+                BackgroundColor="DarkBlue" 
                 TextColor="White"
-                Grid.Row="4"
+                FontAttributes="Bold"/>
+            
+            <Button 
+                Text="VER MAPA" 
+                TextColor="White"
+                Grid.Row="5"
                 Grid.ColumnSpan="2"
                 FontSize="17"
                 BackgroundColor="Blue" 
-                 Command="{Binding MapCommand}"></Button>
-            
+                Command="{Binding MapCommand}"></Button>
             <Button 
                 Text="CONFIRMAR PEDIDO" 
                 TextColor="White"
-                Grid.Row="5"
-                Grid.Column="1"
+                Grid.Row="6"
+                Grid.ColumnSpan="2"
                 Margin="20"
                 BackgroundColor="DarkBlue" 
                 VerticalOptions="End"
                 Command="{Binding ConfirmCommand}"></Button>
-
         </Grid>
     </ContentPage.Content>
-    
 </ContentPage>

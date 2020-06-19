@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\DeliveryProducts\\Delivery\\Delivery.csproj": {}
+    "D:\\Documentos\\Escuela\\XamarinMultiplataforma\\DeliveryProducts\\Delivery\\Delivery.csproj": {}
   },
   "projects": {
-    "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\DeliveryProducts\\Delivery\\Delivery.csproj": {
+    "D:\\Documentos\\Escuela\\XamarinMultiplataforma\\DeliveryProducts\\Delivery\\Delivery.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\DeliveryProducts\\Delivery\\Delivery.csproj",
+        "projectUniqueName": "D:\\Documentos\\Escuela\\XamarinMultiplataforma\\DeliveryProducts\\Delivery\\Delivery.csproj",
         "projectName": "Delivery",
-        "projectPath": "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\DeliveryProducts\\Delivery\\Delivery.csproj",
-        "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\DeliveryProducts\\Delivery\\obj\\",
+        "projectPath": "D:\\Documentos\\Escuela\\XamarinMultiplataforma\\DeliveryProducts\\Delivery\\Delivery.csproj",
+        "packagesPath": "C:\\Users\\ChrisAlvarez\\.nuget\\packages\\",
+        "outputPath": "D:\\Documentos\\Escuela\\XamarinMultiplataforma\\DeliveryProducts\\Delivery\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "D:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\victo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ChrisAlvarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -79,7 +80,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

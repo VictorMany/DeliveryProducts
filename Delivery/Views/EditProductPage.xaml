@@ -36,50 +36,71 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
-                <Grid Margin="10"                        
-                        Padding="5">
+                <Grid 
+                    Margin="10">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition />
-                        <ColumnDefinition Width="300"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="2*"/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="60"/>
-                        <RowDefinition Height="60"/>
+                        <RowDefinition Height="50*"/>
+                        <RowDefinition Height="50*"/>
                         <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="65"/>
-                        <RowDefinition Height="65"/>
+                        <RowDefinition Height="65*"/>
+                        <RowDefinition Height="65*"/>
                     </Grid.RowDefinitions>
                     <ActivityIndicator
-                    IsRunning="{Binding IsBusy}"
-                    />
-                    <Label Text="Name" HorizontalTextAlignment="Center" HeightRequest="40" WidthRequest="100" VerticalTextAlignment="Center" FontSize="Large" Grid.Column="0" Grid.Row="0" FontAttributes="Bold" TextColor="White" BackgroundColor="Blue" HorizontalOptions="FillAndExpand" VerticalOptions="Center"></Label>
-                    <Entry 
-                    WidthRequest="50"
-                    Placeholder="Name" 
-                    Text="{Binding Name}" Grid.Column="1" Grid.Row="0"  TextColor="Black" />
-
-                    <Label Text="Price" HorizontalTextAlignment="Center" HeightRequest="40" WidthRequest="100" VerticalTextAlignment="Center" FontSize="Large"  Grid.Column="0" Grid.Row="1" FontAttributes="Bold" TextColor="White"  BackgroundColor="Blue" HorizontalOptions="FillAndExpand" VerticalOptions="Center"></Label>
+                        IsRunning="{Binding IsBusy}"/>
+                    <Label
+                        Padding="5"
+                        Text="Nombre:"
+                        VerticalTextAlignment="Center" 
+                        FontSize="Large" 
+                        Grid.Column="0" 
+                        Grid.Row="0" 
+                        FontAttributes="Bold" 
+                        TextColor="White" 
+                        BackgroundColor="#58CDFC" 
+                        VerticalOptions="CenterAndExpand"/>
                     <Entry
-                    Placeholder="Price"
-                    Text="{Binding Price}" Grid.Column="1" Grid.Row="1"  TextColor="Black"/>
-                   
-                    
-                            
+                        Placeholder="Nombre" 
+                        Text="{Binding Name}"
+                        Grid.Column="1"
+                        Grid.Row="0"
+                        TextColor="Black"/>
+                    <Label
+                        Padding="5"
+                        Text="Precio:"
+                        VerticalTextAlignment="Center" 
+                        FontSize="Large"  
+                        Grid.Column="0"
+                        Grid.Row="1" 
+                        FontAttributes="Bold" 
+                        TextColor="White"  
+                        BackgroundColor="#58CDFC"
+                        VerticalOptions="CenterAndExpand"/>
+                    <Entry
+                        Placeholder="Precio"
+                        Text="{Binding Price}" 
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        TextColor="Black"/>
                     <Image
-                    Source="{Binding ImageUrl, Converter={StaticResource ImageConverter}}"
+                        Source="{Binding ImageUrl, Converter={StaticResource ImageConverter}}"
                         Grid.Row="2"
-                        Grid.ColumnSpan="2"
-                        />
+                        Grid.ColumnSpan="2"/>
                     <Button
-                    Text="Tomar fotografía"
-                    Grid.ColumnSpan="2" Grid.Row="3"
-                    Command="{Binding TakePictureCommand}" />
+                        BackgroundColor="Blue"
+                        TextColor="White"
+                        Text="Tomar Foto"
+                        Grid.ColumnSpan="2" Grid.Row="3"
+                        Command="{Binding TakePictureCommand}" />
                     <Button
-                    Text="Seleccionar fotografía"
+                        BackgroundColor="DarkBlue"
+                        TextColor="White"
+                        Text="Buscar Foto"
                         Grid.ColumnSpan="2" Grid.Row="4"
-                    Command="{Binding SelectPictureCommand}" />
-
-
+                        Command="{Binding SelectPictureCommand}" />
                 </Grid>
             </StackLayout>
         </ScrollView>

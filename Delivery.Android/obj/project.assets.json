@@ -2241,24 +2241,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\victo\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\ChrisAlvarez\\.nuget\\packages\\": {},
+    "D:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\DeliveryProducts\\Delivery.Android\\Delivery.Android.csproj",
+      "projectUniqueName": "D:\\Documentos\\Escuela\\XamarinMultiplataforma\\DeliveryProducts\\Delivery.Android\\Delivery.Android.csproj",
       "projectName": "Delivery.Android",
-      "projectPath": "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\DeliveryProducts\\Delivery.Android\\Delivery.Android.csproj",
-      "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\DeliveryProducts\\Delivery.Android\\obj\\",
+      "projectPath": "D:\\Documentos\\Escuela\\XamarinMultiplataforma\\DeliveryProducts\\Delivery.Android\\Delivery.Android.csproj",
+      "packagesPath": "C:\\Users\\ChrisAlvarez\\.nuget\\packages\\",
+      "outputPath": "D:\\Documentos\\Escuela\\XamarinMultiplataforma\\DeliveryProducts\\Delivery.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "D:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\victo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ChrisAlvarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -2272,8 +2272,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\DeliveryProducts\\Delivery\\Delivery.csproj": {
-              "projectPath": "C:\\Users\\victo\\Desktop\\4 SEMESTRE\\PROGRAMACION MULTIPLATAFORMA\\Entrega Final\\DeliveryProducts\\Delivery\\Delivery.csproj"
+            "D:\\Documentos\\Escuela\\XamarinMultiplataforma\\DeliveryProducts\\Delivery\\Delivery.csproj": {
+              "projectPath": "D:\\Documentos\\Escuela\\XamarinMultiplataforma\\DeliveryProducts\\Delivery\\Delivery.csproj"
             }
           }
         }

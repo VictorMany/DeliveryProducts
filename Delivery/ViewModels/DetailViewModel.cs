@@ -29,7 +29,7 @@ namespace Delivery.ViewModels
             Product = new ProductModel
             {
                 PictureBase64 = "",
-                Name = "YO",
+                Name = "Producto genérico",
                 Price = 78
             };
         }

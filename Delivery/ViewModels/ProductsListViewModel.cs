@@ -21,10 +21,10 @@ namespace Delivery.ViewModels
         public Command SeeCartCommand => _seeCommand ?? (_seeCommand = new Command(SeeAction));
 
         Command _NewProductCommand;
-        public Command NewProductCommand => _NewProductCommand ?? (_NewProductCommand = new Command(NewAction)); 
-      
+        public Command NewProductCommand => _NewProductCommand ?? (_NewProductCommand = new Command(NewAction));
 
-        List<ProductModel> listProducts;
+        Command _refreshPageCommand;
+        public Command RefershPageCommand => _refreshPageCommand ?? (_refreshPageCommand = new Command(GetListProducts));
 
         public ProductsListViewModel() 
         {
@@ -63,7 +63,6 @@ namespace Delivery.ViewModels
             };
             ListProducts = listProducts;*/
             GetListProducts();
-            IsBusy = false;
         }
 
         List<ProductModel> _ListProducts;
@@ -73,16 +72,9 @@ namespace Delivery.ViewModels
             set => SetProperty(ref _ListProducts, value);
         }
 
-
-        bool _IsBusy;
-        public bool IsBusy
-        {
-            get => _IsBusy;
-            set => SetProperty(ref _IsBusy, value);
-        }
-
         public async void GetListProducts()
         {
+            IsBusy = true;
             try
             {
                 ApiResponse response = await new ApiService().GetDataAsync<ProductModel>("product");
@@ -96,6 +88,7 @@ namespace Delivery.ViewModels
             {
                 Debug.WriteLine(ex);
             }
+            IsBusy = false;
         }
 
 

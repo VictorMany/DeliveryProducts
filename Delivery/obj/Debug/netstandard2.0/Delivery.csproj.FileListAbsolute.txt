@@ -36,3 +36,24 @@ C:\Users\victo\Desktop\4 SEMESTRE\PROGRAMACION MULTIPLATAFORMA\Entrega Final\Del
 C:\Users\victo\Desktop\4 SEMESTRE\PROGRAMACION MULTIPLATAFORMA\Entrega Final\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\ref\Delivery.dll
 C:\Users\victo\Desktop\4 SEMESTRE\PROGRAMACION MULTIPLATAFORMA\Entrega Final\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Delivery.pdb
 C:\Users\victo\Desktop\4 SEMESTRE\PROGRAMACION MULTIPLATAFORMA\Entrega Final\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Delivery.csprojAssemblyReference.cache
+D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery\bin\Debug\netstandard2.0\Delivery.deps.json
+D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery\bin\Debug\netstandard2.0\Delivery.dll
+D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery\bin\Debug\netstandard2.0\ref\Delivery.dll
+D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery\bin\Debug\netstandard2.0\Delivery.pdb
+D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Delivery.csprojAssemblyReference.cache
+D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\ConfirmOrderPage.xaml.g.cs
+D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\DetailProduct.xaml.g.cs
+D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\EditProductPage.xaml.g.cs
+D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\MapPage.xaml.g.cs
+D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\MenuPage.xaml.g.cs
+D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\OrderPage.xaml.g.cs
+D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\ProductsListPage.xaml.g.cs
+D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Delivery.AssemblyInfoInputs.cache
+D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Delivery.AssemblyInfo.cs
+D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Delivery.csproj.CoreCompileInputs.cache
+D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Delivery.dll
+D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\ref\Delivery.dll
+D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Delivery.pdb
