@@ -4,7 +4,6 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:renders="clr-namespace:Delivery.Renders"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
              mc:Ignorable="d"
              x:Class="Delivery.Views.MapPage">
      <ContentPage.Content>
@@ -16,7 +15,7 @@
             </Grid.RowDefinitions>
             
             <renders:CustomMap
-                x:Name="MapTrip"
+                x:Name="MapOrder"
                 Grid.RowSpan="3"/>
             <BoxView
                 Grid.Row="1"
@@ -26,16 +25,7 @@
                 Padding="10"
                 Grid.Row="1">
                 <Label
-                    x:Name="Title"
-                    HorizontalOptions="Center" />
-                <Label
-                    x:Name="Date"
-                    HorizontalOptions="Center" />
-                <Label
-                    x:Name="Rating"
-                    HorizontalOptions="Center" />
-                <Label
-                    x:Name="Notes"
+                    x:Name="Name"
                     HorizontalOptions="Center" />
             </StackLayout>
         </Grid>

@@ -15,6 +15,7 @@ namespace Delivery.Views
         public ConfirmOrderPage()
         {
             InitializeComponent();
+            BindingContext = new ViewModels.OrderViewModel();
         }
     }
 }

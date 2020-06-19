@@ -1,6 +1,9 @@
 Delivery.Droid.MainActivity, Delivery.Android;crc642007a56b2bc0a4ce.MainActivity
 Delivery.Droid.MainActivity;crc642007a56b2bc0a4ce.MainActivity
 delivery.droid.MainActivity;crc642007a56b2bc0a4ce.MainActivity
+Delivery.Droid.Renders.CustomMapRender, Delivery.Android;crc6479462432e3e8ec8f.CustomMapRender
+Delivery.Droid.Renders.CustomMapRender;crc6479462432e3e8ec8f.CustomMapRender
+delivery.droid.renders.CustomMapRender;crc6479462432e3e8ec8f.CustomMapRender
 Plugin.Media.MediaPickerActivity, Plugin.Media;crc646957603ea1820544.MediaPickerActivity
 Plugin.Media.MediaPickerActivity;crc646957603ea1820544.MediaPickerActivity
 plugin.media.MediaPickerActivity;crc646957603ea1820544.MediaPickerActivity

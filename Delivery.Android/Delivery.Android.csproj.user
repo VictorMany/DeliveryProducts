@@ -3,5 +3,6 @@
   <PropertyGroup>
     <SelectedDevice>HUAWEI FLA-LX3</SelectedDevice>
     <DefaultDevice>pixel_3_xl_pie_9_0_api_28</DefaultDevice>
+    <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
   </PropertyGroup>
 </Project>

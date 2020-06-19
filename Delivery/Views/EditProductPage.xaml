@@ -36,11 +36,11 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
-                <Grid                          
+                <Grid Margin="10"                        
                         Padding="5">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition />
-                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="300"/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="60"/>
@@ -52,13 +52,13 @@
                     <ActivityIndicator
                     IsRunning="{Binding IsBusy}"
                     />
-                    <Label Text="Name" FontSize="Large" Grid.Column="0" Grid.Row="0" FontAttributes="Bold" TextColor="White" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"></Label>
+                    <Label Text="Name" HorizontalTextAlignment="Center" HeightRequest="40" WidthRequest="100" VerticalTextAlignment="Center" FontSize="Large" Grid.Column="0" Grid.Row="0" FontAttributes="Bold" TextColor="White" BackgroundColor="Blue" HorizontalOptions="FillAndExpand" VerticalOptions="Center"></Label>
                     <Entry 
                     WidthRequest="50"
                     Placeholder="Name" 
                     Text="{Binding Name}" Grid.Column="1" Grid.Row="0"  TextColor="Black" />
 
-                    <Label Text="Price" FontSize="Large"  Grid.Column="0" Grid.Row="1" FontAttributes="Bold" TextColor="White"  BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Center"></Label>
+                    <Label Text="Price" HorizontalTextAlignment="Center" HeightRequest="40" WidthRequest="100" VerticalTextAlignment="Center" FontSize="Large"  Grid.Column="0" Grid.Row="1" FontAttributes="Bold" TextColor="White"  BackgroundColor="Blue" HorizontalOptions="FillAndExpand" VerticalOptions="Center"></Label>
                     <Entry
                     Placeholder="Price"
                     Text="{Binding Price}" Grid.Column="1" Grid.Row="1"  TextColor="Black"/>

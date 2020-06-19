@@ -88,12 +88,39 @@
                 </BindableLayout.ItemTemplate>
 
             </FlexLayout>
-            <Label VerticalOptions="End" Margin="20, 0, 100, 140" VerticalTextAlignment="Center" HeightRequest="50" Text="Precio Total" FontSize="Large" BackgroundColor="Blue" TextColor="White"></Label>
-            <Frame BorderColor="Blue" VerticalOptions="End" Margin="160, 0, 10, 139" CornerRadius="5" 
-       Padding="8" HeightRequest="37">
-                <Label Text="Hola" FontSize="Large"></Label>
+            <Frame 
+                HeightRequest="47" 
+                BorderColor="Blue" 
+                VerticalOptions="End"  
+                Margin="7, 0, 270, 140" 
+                CornerRadius="5" 
+                Padding="1">
+                <Label 
+                  Text="Precio Total" 
+                  FontSize="Large" 
+                  BackgroundColor="Blue" 
+                  TextColor="White" 
+                  VerticalTextAlignment="Center" 
+                  HorizontalTextAlignment="Center"/>
             </Frame>
-            <Button Text="SIGUIENTE" TextColor="White" BackgroundColor="DarkBlue" Margin="200, 0, 0, 50" VerticalOptions="EndAndExpand"></Button>
+            <Frame 
+                BorderColor="Blue" 
+                VerticalOptions="End" 
+                Margin="160, 0, 10, 141" 
+                CornerRadius="5" 
+                Padding="8" 
+                HeightRequest="32">
+                <Label 
+                   Text="Hola" 
+                   FontSize="Large"/>
+            </Frame>
+            <Button 
+                Text="SIGUIENTE" 
+                TextColor="White" 
+                BackgroundColor="DarkBlue" 
+                Margin="200, 0, 40, 50" 
+                VerticalOptions="EndAndExpand"  
+                Command="{Binding NextCommand}"></Button>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
