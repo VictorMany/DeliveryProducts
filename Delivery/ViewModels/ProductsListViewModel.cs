@@ -13,6 +13,7 @@ namespace Delivery.ViewModels
 {
     public class ProductsListViewModel: BaseViewModel
     {
+        public static ProductsListViewModel instance;
 
         Command _selectCommand;
         public Command SelectCommand => _selectCommand ?? (_selectCommand = new Command(SelectAction));
@@ -28,6 +29,7 @@ namespace Delivery.ViewModels
 
         public ProductsListViewModel() 
         {
+            instance = this;
             ProductModel.staticParent = this;
 
             /*listProducts = new List<ProductModel>()
@@ -91,13 +93,19 @@ namespace Delivery.ViewModels
             IsBusy = false;
         }
 
+        public static ProductsListViewModel GetInstance()
+        {
+            if (instance == null) instance = new ProductsListViewModel();
+            return instance;
+        }
+
 
         private async void SelectAction(object obj)  //Nos va a llevar al detail del producto
         {
             //Id del producto seleccionado 
             int a = (int)obj;
-            //oBTENER EL OBJ a partir de l Id que ya tenemos 
-            await MenuPage.menuPages.Detail.Navigation.PushAsync(new DetailProduct());
+            //Obtener el producto a partir del Id que ya tenemos
+            await MenuPage.menuPages.Detail.Navigation.PushAsync(new DetailProduct(a));
         }
 
         private async void SeeAction()  //Nos va a llevar al pedido que estamos generando en este momento

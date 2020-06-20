@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documentos\\Escuela\\XamarinMultiplataforma\\DeliveryProducts\\Delivery.Android\\Delivery.Android.csproj": {}
+    "C:\\Users\\Anahi Nova\\Documents\\Taller de Desarrollo Movil\\Delivery App Final\\DeliveryProducts\\Delivery.Android\\Delivery.Android.csproj": {}
   },
   "projects": {
-    "D:\\Documentos\\Escuela\\XamarinMultiplataforma\\DeliveryProducts\\Delivery.Android\\Delivery.Android.csproj": {
+    "C:\\Users\\Anahi Nova\\Documents\\Taller de Desarrollo Movil\\Delivery App Final\\DeliveryProducts\\Delivery.Android\\Delivery.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documentos\\Escuela\\XamarinMultiplataforma\\DeliveryProducts\\Delivery.Android\\Delivery.Android.csproj",
+        "projectUniqueName": "C:\\Users\\Anahi Nova\\Documents\\Taller de Desarrollo Movil\\Delivery App Final\\DeliveryProducts\\Delivery.Android\\Delivery.Android.csproj",
         "projectName": "Delivery.Android",
-        "projectPath": "D:\\Documentos\\Escuela\\XamarinMultiplataforma\\DeliveryProducts\\Delivery.Android\\Delivery.Android.csproj",
-        "packagesPath": "C:\\Users\\ChrisAlvarez\\.nuget\\packages\\",
-        "outputPath": "D:\\Documentos\\Escuela\\XamarinMultiplataforma\\DeliveryProducts\\Delivery.Android\\obj\\",
+        "projectPath": "C:\\Users\\Anahi Nova\\Documents\\Taller de Desarrollo Movil\\Delivery App Final\\DeliveryProducts\\Delivery.Android\\Delivery.Android.csproj",
+        "packagesPath": "C:\\Users\\Anahi Nova\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Anahi Nova\\Documents\\Taller de Desarrollo Movil\\Delivery App Final\\DeliveryProducts\\Delivery.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "D:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\ChrisAlvarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Anahi Nova\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "D:\\Documentos\\Escuela\\XamarinMultiplataforma\\DeliveryProducts\\Delivery\\Delivery.csproj": {
-                "projectPath": "D:\\Documentos\\Escuela\\XamarinMultiplataforma\\DeliveryProducts\\Delivery\\Delivery.csproj"
+              "C:\\Users\\Anahi Nova\\Documents\\Taller de Desarrollo Movil\\Delivery App Final\\DeliveryProducts\\Delivery\\Delivery.csproj": {
+                "projectPath": "C:\\Users\\Anahi Nova\\Documents\\Taller de Desarrollo Movil\\Delivery App Final\\DeliveryProducts\\Delivery\\Delivery.csproj"
               }
             }
           }
@@ -58,21 +58,21 @@
         }
       }
     },
-    "D:\\Documentos\\Escuela\\XamarinMultiplataforma\\DeliveryProducts\\Delivery\\Delivery.csproj": {
+    "C:\\Users\\Anahi Nova\\Documents\\Taller de Desarrollo Movil\\Delivery App Final\\DeliveryProducts\\Delivery\\Delivery.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documentos\\Escuela\\XamarinMultiplataforma\\DeliveryProducts\\Delivery\\Delivery.csproj",
+        "projectUniqueName": "C:\\Users\\Anahi Nova\\Documents\\Taller de Desarrollo Movil\\Delivery App Final\\DeliveryProducts\\Delivery\\Delivery.csproj",
         "projectName": "Delivery",
-        "projectPath": "D:\\Documentos\\Escuela\\XamarinMultiplataforma\\DeliveryProducts\\Delivery\\Delivery.csproj",
-        "packagesPath": "C:\\Users\\ChrisAlvarez\\.nuget\\packages\\",
-        "outputPath": "D:\\Documentos\\Escuela\\XamarinMultiplataforma\\DeliveryProducts\\Delivery\\obj\\",
+        "projectPath": "C:\\Users\\Anahi Nova\\Documents\\Taller de Desarrollo Movil\\Delivery App Final\\DeliveryProducts\\Delivery\\Delivery.csproj",
+        "packagesPath": "C:\\Users\\Anahi Nova\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Anahi Nova\\Documents\\Taller de Desarrollo Movil\\Delivery App Final\\DeliveryProducts\\Delivery\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ChrisAlvarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Anahi Nova\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -134,7 +134,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

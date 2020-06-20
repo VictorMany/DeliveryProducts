@@ -1,4 +1,5 @@
-﻿using Delivery.ViewModels;
+﻿using Delivery.Models;
+using Delivery.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +19,13 @@ namespace Delivery.Views
             InitializeComponent();
 
             BindingContext = new EditProductViewModel();
+        }
+
+        public EditProductPage(ProductModel prod)
+        {
+            InitializeComponent();
+
+            BindingContext = new EditProductViewModel(prod);
         }
     }
 }

@@ -9585,26 +9585,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ChrisAlvarez\\.nuget\\packages\\": {},
-    "D:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Users\\Anahi Nova\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documentos\\Escuela\\XamarinMultiplataforma\\DeliveryProducts\\Delivery.UWP\\Delivery.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\Anahi Nova\\Documents\\Taller de Desarrollo Movil\\Delivery App Final\\DeliveryProducts\\Delivery.UWP\\Delivery.UWP.csproj",
       "projectName": "Delivery.UWP",
-      "projectPath": "D:\\Documentos\\Escuela\\XamarinMultiplataforma\\DeliveryProducts\\Delivery.UWP\\Delivery.UWP.csproj",
-      "packagesPath": "C:\\Users\\ChrisAlvarez\\.nuget\\packages\\",
-      "outputPath": "D:\\Documentos\\Escuela\\XamarinMultiplataforma\\DeliveryProducts\\Delivery.UWP\\obj\\",
+      "projectPath": "C:\\Users\\Anahi Nova\\Documents\\Taller de Desarrollo Movil\\Delivery App Final\\DeliveryProducts\\Delivery.UWP\\Delivery.UWP.csproj",
+      "packagesPath": "C:\\Users\\Anahi Nova\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Anahi Nova\\Documents\\Taller de Desarrollo Movil\\Delivery App Final\\DeliveryProducts\\Delivery.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "D:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\ChrisAlvarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Anahi Nova\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -9618,8 +9618,8 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "D:\\Documentos\\Escuela\\XamarinMultiplataforma\\DeliveryProducts\\Delivery\\Delivery.csproj": {
-              "projectPath": "D:\\Documentos\\Escuela\\XamarinMultiplataforma\\DeliveryProducts\\Delivery\\Delivery.csproj"
+            "C:\\Users\\Anahi Nova\\Documents\\Taller de Desarrollo Movil\\Delivery App Final\\DeliveryProducts\\Delivery\\Delivery.csproj": {
+              "projectPath": "C:\\Users\\Anahi Nova\\Documents\\Taller de Desarrollo Movil\\Delivery App Final\\DeliveryProducts\\Delivery\\Delivery.csproj"
             }
           }
         }

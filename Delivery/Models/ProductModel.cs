@@ -13,9 +13,13 @@ namespace Delivery.Models
         public string Name { get; set; }
         public float Price { get; set; }
 
+        [Newtonsoft.Json.JsonIgnore]
         public static ProductsListViewModel staticParent { get; set; }
+        [Newtonsoft.Json.JsonIgnore]
         public ProductsListViewModel parent { get; set; }
+        [Newtonsoft.Json.JsonIgnore]
         public static OrderViewModel staticParent2 { get; set; }
+        [Newtonsoft.Json.JsonIgnore]
         public OrderViewModel parent2 { get; set; }
 
         public ProductModel()

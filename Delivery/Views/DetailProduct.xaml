@@ -32,7 +32,7 @@
                 </OnPlatform>
             </ToolbarItem.IconImageSource>
         </ToolbarItem>
-        <ToolbarItem Text="Borrar" Command="{Binding CommandDelete}">
+        <ToolbarItem Text="Borrar" Command="{Binding DeleteCommand}">
             <ToolbarItem.IconImageSource>
                 <OnPlatform
                     x:TypeArguments="ImageSource">
@@ -68,7 +68,7 @@
                 BackgroundColor="DarkBlue"
                 Grid.Row="2"
                 CornerRadius="50"/>
-
+            <ActivityIndicator IsRunning="{Binding IsBusy}"/>
             <Label 
                 Grid.Row="0"
                 Text="{Binding Product.Name}"

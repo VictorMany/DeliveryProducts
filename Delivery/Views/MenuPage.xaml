@@ -8,7 +8,7 @@
     <MasterDetailPage.Master>
         <ContentPage Title="MenuPage">
             <StackLayout>
-               <Frame x:Name="AllProducts" ClassId="Products">
+                <Frame x:Name="AllProducts" ClassId="Products" BackgroundColor="DarkBlue">
                     <Frame.GestureRecognizers>
                         <TapGestureRecognizer Command="{Binding SelectedCommand}" CommandParameter="{x:Reference AllProducts}"/>
                     </Frame.GestureRecognizers>
@@ -20,8 +20,24 @@
                             <ColumnDefinition Width="1*"/>
                             <ColumnDefinition Width="2*"/>
                         </Grid.ColumnDefinitions>
-                        <Image Grid.Row="0" Grid.Column="0" Source="paw.png"/>
-                        <Label Text="Todos los Productos" Grid.Row="0" VerticalOptions="Center" Grid.Column="1"/>
+                        <Image Grid.Row="0" Grid.Column="0" Source="bag.png"/>
+                        <Label Text="Lista de Productos" Grid.Row="0" VerticalOptions="Start" Grid.Column="1" TextColor="White" FontAttributes="Bold"/>
+                    </Grid>
+                </Frame>
+                <Frame x:Name="AllOrders" ClassId="Orders" BackgroundColor="DarkBlue">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding SelectedCommand}" CommandParameter="{x:Reference AllOrders}"/>
+                    </Frame.GestureRecognizers>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="2*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.Row="0" Grid.Column="0" Source="product.png"/>
+                        <Label Text="Lista de Pedidos" Grid.Row="0" VerticalOptions="Start" Grid.Column="1" TextColor="White" FontAttributes="Bold"/>
                     </Grid>
                 </Frame>
             </StackLayout>

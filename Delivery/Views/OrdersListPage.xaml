@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Delivery.Views.OrdersListPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.35*"/>
+                <RowDefinition Height="2.6*"/>
+                <RowDefinition Height="1.6*"/>
+            </Grid.RowDefinitions>
+            <Label
+                Text="Resumen:"
+                FontSize="Large"
+                VerticalOptions="Center"
+                Margin="5, 0"
+                Padding="20, 5"
+                BackgroundColor="#58CDFC"
+                FontAttributes="Bold"
+                TextColor="White"/>
+            <Frame
+                Margin="5, 0"
+                Padding="5, 0"
+                BorderColor="#58CDFC"
+                Grid.Row="1">
+                <ScrollView>
+                    <FlexLayout
+                        x:Name="ItemsCollectionView"
+                        BindableLayout.ItemsSource="{Binding ListOrders}"
+                        Direction="Row"
+                        AlignContent="Start"
+                        JustifyContent="SpaceAround"
+                        Wrap="Wrap">
+                        <BindableLayout.ItemTemplate>
+                            <DataTemplate>
+                                <StackLayout   
+                                Padding="2, 10, 2, 10"
+                                WidthRequest="500"
+                                HeightRequest="140"
+                                VerticalOptions="CenterAndExpand">
+                                    <Grid 
+                                    BackgroundColor="#58CDFC"
+                                    Padding="15">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="60"></RowDefinition>
+                                            <RowDefinition Height="30"></RowDefinition>
+                                        </Grid.RowDefinitions>
+
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition></ColumnDefinition>
+                                            <ColumnDefinition></ColumnDefinition>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Label 
+                                            Text="{Binding Date}"   
+                                            LineBreakMode="NoWrap" 
+                                            Style="{DynamicResource ListItemTextStyle}"
+                                            TextColor="White"
+                                            Grid.Column="0"
+                                            Grid.Row="0"
+                                            FontSize="Large"
+                                            FontAttributes="Bold"/>
+                                        <Label  
+                                            Text="{Binding Latitude}" 
+                                            LineBreakMode="NoWrap"
+                                            Style="{DynamicResource ListItemDetailTextStyle}"
+                                            TextColor="White"
+                                            Grid.Column="0"
+                                            Grid.Row="1"
+                                            FontSize="Large"
+                                            FontAttributes="Bold"/>
+                                        <Label
+                                            Text="{Binding Longitude}" 
+                                            LineBreakMode="NoWrap"
+                                            Style="{DynamicResource ListItemDetailTextStyle}"
+                                            TextColor="White"
+                                            Grid.Column="1"
+                                            Grid.Row="1"
+                                            FontSize="Large"
+                                            FontAttributes="Bold"/>
+                                    </Grid>
+                                    <StackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer 
+                                            Command="{Binding parent.SelectCommand}"
+                                            CommandParameter="{Binding OrderID}">
+                                        </TapGestureRecognizer>
+                                    </StackLayout.GestureRecognizers>
+                                </StackLayout>
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+                    </FlexLayout>
+                </ScrollView>
+              </Frame>          
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

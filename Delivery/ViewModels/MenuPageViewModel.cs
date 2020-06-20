@@ -27,6 +27,9 @@ namespace Delivery.ViewModels
                 case "Products":
                     nextpage = new ProductsListPage();
                     break;
+                case "Orders":
+                    nextpage = new OrdersListPage();
+                    break;
                 default:
                     nextpage = new ProductsListPage();
                     break;

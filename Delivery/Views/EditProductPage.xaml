@@ -7,7 +7,7 @@
              mc:Ignorable="d"
              x:Class="Delivery.Views.EditProductPage">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Guardar" Command="{Binding EditCommand}">
+        <ToolbarItem Text="Guardar" Command="{Binding SaveCommand}">
             <ToolbarItem.IconImageSource>
                 <OnPlatform
                     x:TypeArguments="ImageSource">
@@ -64,7 +64,7 @@
                         VerticalOptions="CenterAndExpand"/>
                     <Entry
                         Placeholder="Nombre" 
-                        Text="{Binding Name}"
+                        Text="{Binding ProductSelected.Name}"
                         Grid.Column="1"
                         Grid.Row="0"
                         TextColor="Black"/>
@@ -81,7 +81,7 @@
                         VerticalOptions="CenterAndExpand"/>
                     <Entry
                         Placeholder="Precio"
-                        Text="{Binding Price}" 
+                        Text="{Binding ProductSelected.Price}" 
                         Grid.Column="1"
                         Grid.Row="1"
                         TextColor="Black"/>

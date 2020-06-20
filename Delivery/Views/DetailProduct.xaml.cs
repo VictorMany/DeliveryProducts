@@ -20,10 +20,10 @@ namespace Delivery.Views
 
             BindingContext = new DetailViewModel();
         }
-        public DetailProduct(ProductModel pm)
+        public DetailProduct(int prodID)
         {
             InitializeComponent();
-            BindingContext = new DetailViewModel();
+            BindingContext = new DetailViewModel(prodID);
         }
     }
 }
