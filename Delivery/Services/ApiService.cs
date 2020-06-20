@@ -71,7 +71,6 @@ namespace Delivery.Services
                         Message = result
                     };
                 }
-
                 var data = JsonConvert.DeserializeObject<T>(result);
                 return new ApiResponse
                 {
@@ -116,7 +115,13 @@ namespace Delivery.Services
                     };
                 }
 
-                return JsonConvert.DeserializeObject<ApiResponse>(result);
+                var created = JsonConvert.DeserializeObject<ApiResponse>(result);
+                return new ApiResponse
+                {
+                    IsSuccess = true,
+                    Message = "Ok",
+                    Result = created
+                };
             }
             catch (System.Exception ex)
             {

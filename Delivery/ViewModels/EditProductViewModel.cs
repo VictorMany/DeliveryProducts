@@ -17,6 +17,9 @@ namespace Delivery.ViewModels
         Command _SaveCommand;
         public Command SaveCommand => _SaveCommand ?? (_SaveCommand = new Command(SaveAction));
 
+        Command _CancelCommand;
+        public Command CancelCommand => _CancelCommand ?? (_CancelCommand = new Command(CancelAction));
+
         Command _TakePictureCommand;
         public Command TakePictureCommand => _TakePictureCommand ?? (_TakePictureCommand = new Command(TakePictureAction));
 
@@ -131,6 +134,11 @@ namespace Delivery.ViewModels
                 return;
 
             ImageUrl = await new ImageService().ConvertImageFileToBase64(file.Path);
+        }
+
+        public async void CancelAction()
+        {
+            await MenuPage.menuPages.Detail.Navigation.PopAsync();
         }
     }
 }

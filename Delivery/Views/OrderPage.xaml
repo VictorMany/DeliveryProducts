@@ -132,7 +132,7 @@
                     Padding="8"
                     HeightRequest="32">
                     <Label 
-                        Text="9999.99" 
+                        Text="{Binding Total}" 
                         FontSize="Large"
                         HorizontalTextAlignment="End"/>
                 </Frame>

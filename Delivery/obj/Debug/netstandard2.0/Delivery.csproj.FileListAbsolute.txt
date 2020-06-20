@@ -80,3 +80,26 @@ C:\Users\Anahi Nova\Documents\Taller de Desarrollo Movil\Delivery App Final\Deli
 C:\Users\Anahi Nova\Documents\Taller de Desarrollo Movil\Delivery App Final\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Delivery.dll
 C:\Users\Anahi Nova\Documents\Taller de Desarrollo Movil\Delivery App Final\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\ref\Delivery.dll
 C:\Users\Anahi Nova\Documents\Taller de Desarrollo Movil\Delivery App Final\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Delivery.pdb
+C:\Users\Javie\OneDrive\Escritorio\Delivery_Exam\DeliveryProducts\Delivery\bin\Debug\netstandard2.0\Delivery.deps.json
+C:\Users\Javie\OneDrive\Escritorio\Delivery_Exam\DeliveryProducts\Delivery\bin\Debug\netstandard2.0\Delivery.dll
+C:\Users\Javie\OneDrive\Escritorio\Delivery_Exam\DeliveryProducts\Delivery\bin\Debug\netstandard2.0\ref\Delivery.dll
+C:\Users\Javie\OneDrive\Escritorio\Delivery_Exam\DeliveryProducts\Delivery\bin\Debug\netstandard2.0\Delivery.pdb
+C:\Users\Javie\OneDrive\Escritorio\Delivery_Exam\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Delivery.csprojAssemblyReference.cache
+C:\Users\Javie\OneDrive\Escritorio\Delivery_Exam\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Javie\OneDrive\Escritorio\Delivery_Exam\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Javie\OneDrive\Escritorio\Delivery_Exam\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\ConfirmOrderPage.xaml.g.cs
+C:\Users\Javie\OneDrive\Escritorio\Delivery_Exam\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\DetailOrder.xaml.g.cs
+C:\Users\Javie\OneDrive\Escritorio\Delivery_Exam\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\DetailProduct.xaml.g.cs
+C:\Users\Javie\OneDrive\Escritorio\Delivery_Exam\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\EditProductPage.xaml.g.cs
+C:\Users\Javie\OneDrive\Escritorio\Delivery_Exam\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\MapPage.xaml.g.cs
+C:\Users\Javie\OneDrive\Escritorio\Delivery_Exam\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\MenuPage.xaml.g.cs
+C:\Users\Javie\OneDrive\Escritorio\Delivery_Exam\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\OrderPage.xaml.g.cs
+C:\Users\Javie\OneDrive\Escritorio\Delivery_Exam\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\OrdersListPage.xaml.g.cs
+C:\Users\Javie\OneDrive\Escritorio\Delivery_Exam\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\ProductsListPage.xaml.g.cs
+C:\Users\Javie\OneDrive\Escritorio\Delivery_Exam\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Delivery.AssemblyInfoInputs.cache
+C:\Users\Javie\OneDrive\Escritorio\Delivery_Exam\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Delivery.AssemblyInfo.cs
+C:\Users\Javie\OneDrive\Escritorio\Delivery_Exam\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Delivery.csproj.CoreCompileInputs.cache
+C:\Users\Javie\OneDrive\Escritorio\Delivery_Exam\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Javie\OneDrive\Escritorio\Delivery_Exam\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Delivery.dll
+C:\Users\Javie\OneDrive\Escritorio\Delivery_Exam\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\ref\Delivery.dll
+C:\Users\Javie\OneDrive\Escritorio\Delivery_Exam\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Delivery.pdb

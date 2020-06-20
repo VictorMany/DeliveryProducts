@@ -15,6 +15,7 @@ namespace Delivery.ViewModels
     {
         public int IDOrderActual;
         public static OrdersListViewModel instance;
+        OrderModel orderCreated;
 
         Command _selectCommand;
         public Command SelectCommand => _selectCommand ?? (_selectCommand = new Command(SelectAction));
@@ -81,7 +82,7 @@ namespace Delivery.ViewModels
                     if (orderCollection[orderCollection.Count-1].Latitude != 0 && orderCollection[orderCollection.Count - 1].Longitude != 0)
                     {
                         createOrder();
-                        IDOrderActual = orderCollection[orderCollection.Count - 1].OrderID + 1;
+                        IDOrderActual = orderCreated.OrderID;
                     }
                     else
                     {
@@ -112,7 +113,7 @@ namespace Delivery.ViewModels
                 });
                 if (response != null || response.Result != null)
                 {
-                    await Application.Current.MainPage.DisplayAlert("Mensaje", "Error", "Ok");
+                    orderCreated = (OrderModel)response.Result;
                 }
             }
             catch (Exception ex)
