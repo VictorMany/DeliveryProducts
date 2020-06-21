@@ -12,7 +12,7 @@ namespace Delivery.ViewModels
 {
     public class DetailViewModel : BaseViewModel
     {
-
+        ObservableCollection<ProductModel> OrderProductsList;
         Command _DeleteCommand;
         public Command DeleteCommand => _DeleteCommand ?? (_DeleteCommand = new Command(DeleteAction));
 
@@ -33,6 +33,9 @@ namespace Delivery.ViewModels
 
         Command _CommandEdit;
         public Command CommandEdit => _CommandEdit ?? (_CommandEdit = new Command(EditAction));
+
+        Command _CommandAddToCart;
+        public Command CommandAddToCart => _CommandAddToCart ?? (_CommandAddToCart = new Command(AddToCartAction));
 
         public async void EditAction()
         {
@@ -102,6 +105,67 @@ namespace Delivery.ViewModels
                     }
                     IsBusy = false;
                 }
+            }
+        }
+
+        public async void AddToCartAction()
+        {
+            try
+            {
+                ApiResponse response = await new ApiService().GetListDataAsyncByID<ProductModel>("orderProduct", App.car.ID);
+                if (response != null || response.Result != null)
+                {
+                    bool found = false;
+                    OrderProductsList = (ObservableCollection<ProductModel>)response.Result;
+                    if (response.Result != null)
+                    {
+                        for (int productId = 0; productId < OrderProductsList.Count; productId++)
+                        {
+                            if (OrderProductsList[productId] == Product)
+                            {
+                                found = true;
+                            }
+                        }
+
+                        if(found != true)
+                        {
+                            AddToCart();
+                        }
+                        else
+                        {
+                            await Application.Current.MainPage.DisplayAlert("Delivery", "Este producto ya se encuentra en el carrito", "Ok");
+                        }
+                    }
+                    else
+                    {
+                        AddToCart();
+                    }
+
+                }
+            } catch (Exception ex)
+            {
+                await Application.Current.MainPage.DisplayAlert("Error", ex.Message, "OK");
+            }
+        }
+
+        public async void AddToCart()
+        {
+            try
+            {
+                ApiResponse response = await new ApiService().PostDataAsync("orderProduct", new OrderProductModel
+                {
+                    IDOrder = App.car.ID,
+                    IDProduct = (int)Product.ID
+                });
+                if (response != null || response.Result != null)
+                {
+                    await Application.Current.MainPage.DisplayAlert("Delivery", "El Producto se agrego al carrito exitosamente!!", "Ok");
+                    await MenuPage.menuPages.Detail.Navigation.PopAsync();
+                }
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage.DisplayAlert("Error", ex.Message, "OK");
             }
 
         }
