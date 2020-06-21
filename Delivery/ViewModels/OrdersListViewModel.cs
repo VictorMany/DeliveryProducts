@@ -13,9 +13,7 @@ namespace Delivery.ViewModels
 {
     public class OrdersListViewModel : BaseViewModel
     {
-        public int IDOrderActual;
         public static OrdersListViewModel instance;
-        OrderModel orderCreated;
 
         Command _selectCommand;
         public Command SelectCommand => _selectCommand ?? (_selectCommand = new Command(SelectAction));
@@ -70,57 +68,14 @@ namespace Delivery.ViewModels
             set => SetProperty(ref _ListOrders, value);
         }
 
-        public async void GetListOrders()
+        public void GetListOrders()
         {
             IsBusy = true;
-            try
-            {
-                ApiResponse response = await new ApiService().GetDataAsync<OrderModel>("order");
-                if (response != null || response.Result != null)
-                {
-                    ObservableCollection<OrderModel> orderCollection = (ObservableCollection<OrderModel>)response.Result;
-                    if (orderCollection[orderCollection.Count-1].Latitude != 0 && orderCollection[orderCollection.Count - 1].Longitude != 0)
-                    {
-                        createOrder();
-                        IDOrderActual = orderCreated.OrderID;
-                    }
-                    else
-                    {
-                        IDOrderActual=orderCollection[orderCollection.Count - 1].OrderID;
-                        orderCollection.RemoveAt(orderCollection.Count - 1);
-                    }
-                    ListOrders = orderCollection.ToList();
-                }
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine(ex);
-            }
+            ListOrders = App.listOrders;
             IsBusy = false;
         }
 
-        public async void createOrder()
-        {
-            try
-            {
-                ApiResponse response = await new ApiService().PostDataAsync("order", new OrderModel
-                {
-                    Date = "not finished",
-                    Address = "no finished",
-                    Latitude = 0,
-                    Longitude = 0,
-                    Total = 0
-                });
-                if (response != null || response.Result != null)
-                {
-                    orderCreated = (OrderModel)response.Result;
-                }
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine(ex);
-            }
-        }
+        
 
         public static OrdersListViewModel GetInstance()
         {

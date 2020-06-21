@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
+using System.Linq;
 using System.Text;
 using Xamarin.Forms;
 
@@ -26,7 +27,7 @@ namespace Delivery.ViewModels
 
         ObservableCollection<OrderModel> OrdersList;
 
-        ObservableCollection<OrderProductModel> OrderProductsList;
+        ObservableCollection<ProductModel> OrderProductsList;
 
         List<ProductModel> _ListProducts;
         public List<ProductModel> ListProductsOnCart
@@ -80,43 +81,27 @@ namespace Delivery.ViewModels
             };
             ListProductsOnCart = listProducts;*/
             Total = 0;
-            GetListOrders();
+            GetListOrderProducts();
             IsBusy = false;
 
-        }
-
-        public async void GetListOrders()
-        {
-            try
-            {
-                ApiResponse response = await new ApiService().GetDataAsync<OrderModel>("order");
-                if (response != null || response.Result != null)
-                {
-                    OrdersList = (ObservableCollection<OrderModel>)response.Result;
-                    lastOrder = OrdersList[OrdersList.Count - 1];
-                    GetListOrderProducts();
-                }
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine(ex);
-            }
         }
 
         public async void GetListOrderProducts()
         {
             try
             {
-                ApiResponse response = await new ApiService().GetDataAsyncByID<OrderProductModel>("orderProduct", lastOrder.OrderID);
+                ApiResponse response = await new ApiService().GetListDataAsyncByID<ProductModel>("orderProduct", App.car.ID);
                 if (response != null || response.Result != null)
                 {
-                    OrderProductsList = (ObservableCollection<OrderProductModel>)response.Result;
+                    OrderProductsList = (ObservableCollection<ProductModel>)response.Result;
                     if(response.Result != null)
                     {
                         for (int productId = 0; productId < OrderProductsList.Count; productId++)
                         {
-                            GetListProducts(OrderProductsList[productId].IDProduct);
+                            Total += OrderProductsList[productId].Price;
+                            // GetListProducts(OrderProductsList[productId].IDProduct);
                         }
+                        ListProductsOnCart = OrderProductsList.ToList();
                     }
                     else
                     {
@@ -133,23 +118,16 @@ namespace Delivery.ViewModels
             // ListProductsOnCart
         }
 
-        public async void GetListProducts(int id)
+        public void GetListProducts(int id)
         {
-            try
+
+            for (int position = 0; position < App.listProducts.Count; position++)
             {
-                ApiResponse response = await new ApiService().GetDataAsyncByID<ProductModel>("product", id);
-                if (response != null || response.Result != null)
+                if (id == App.listProducts[position].ID)
                 {
-                    ProductModel product = (ProductModel)response.Result;
-                    ListProductsOnCart.Add(product);
-                    Total += product.Price;
+                    
                 }
             }
-            catch (Exception ex)
-            {
-                Debug.WriteLine(ex);
-            }
-            // ListProductsOnCart
         }
 
         public async void NextAction()

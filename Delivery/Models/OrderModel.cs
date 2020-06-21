@@ -8,7 +8,7 @@ namespace Delivery.Models
 {
     public class OrderModel
     {
-        public int OrderID { get;  set; }
+        public int ID { get;  set; }
         public string Date { get; set; }
         public string Address { get; set; }
         public float Latitude { get; set; }

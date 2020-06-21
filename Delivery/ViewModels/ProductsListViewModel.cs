@@ -7,6 +7,7 @@ using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace Delivery.ViewModels
@@ -25,7 +26,7 @@ namespace Delivery.ViewModels
         public Command NewProductCommand => _NewProductCommand ?? (_NewProductCommand = new Command(NewAction));
 
         Command _refreshPageCommand;
-        public Command RefershPageCommand => _refreshPageCommand ?? (_refreshPageCommand = new Command(GetListProducts));
+        public Command RefershPageCommand => _refreshPageCommand ?? (_refreshPageCommand = new Command(RefreshProducts));
 
         public ProductsListViewModel() 
         {
@@ -74,22 +75,19 @@ namespace Delivery.ViewModels
             set => SetProperty(ref _ListProducts, value);
         }
 
+        public async void RefreshProducts()
+        {
+            IsBusy = true;
+            App.getProductsList();
+            ListProducts = App.listProducts;
+            IsBusy = false;
+        }
+
         public async void GetListProducts()
         {
             IsBusy = true;
-            try
-            {
-                ApiResponse response = await new ApiService().GetDataAsync<ProductModel>("product");
-                if (response != null || response.Result != null)
-                {
-                    ObservableCollection<ProductModel> productCollection = (ObservableCollection<ProductModel>)response.Result;
-                    ListProducts = productCollection.ToList();
-                }
-            }
-            catch (Exception ex)
-            {
-                await Application.Current.MainPage.DisplayAlert("Error", ex.Message, "OK");
-            }
+            await Task.Delay(4000);
+            ListProducts = App.listProducts;
             IsBusy = false;
         }
 

@@ -72,6 +72,7 @@ namespace Delivery.ViewModels
                         await Application.Current.MainPage.DisplayAlert("Failed Request", "Message: " + response.Message, "OK");
                     } else
                     {
+                        App.getProductsList();
                         await Application.Current.MainPage.DisplayAlert("Mensaje", "El Producto fue creado exitosamente", "Ok");
                     }
                 }
@@ -84,7 +85,7 @@ namespace Delivery.ViewModels
                         Price = ProductSelected.Price,
                         PictureBase64 = ImageUrl ?? ""
                     }, ProductSelected.ID ?? 0);
-
+                    App.getProductsList();
                     await Application.Current.MainPage.DisplayAlert("Mensaje", "El Producto fue actualizado exitosamente", "Ok");
                     DetailViewModel.GetInstance().GetProductContent(ProductSelected.ID ?? 0);
                 }
