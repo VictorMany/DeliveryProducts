@@ -103,3 +103,5 @@ C:\Users\Javie\OneDrive\Escritorio\Delivery_Exam\DeliveryProducts\Delivery\obj\D
 C:\Users\Javie\OneDrive\Escritorio\Delivery_Exam\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Delivery.dll
 C:\Users\Javie\OneDrive\Escritorio\Delivery_Exam\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\ref\Delivery.dll
 C:\Users\Javie\OneDrive\Escritorio\Delivery_Exam\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Delivery.pdb
+D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\DetailOrder.xaml.g.cs
+D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\OrdersListPage.xaml.g.cs

@@ -7,7 +7,7 @@
              mc:Ignorable="d"
              x:Class="Delivery.Views.EditProductPage">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Guardar" Command="{Binding SaveCommand}">
+        <ToolbarItem  Text="Guardar" Command="{Binding SaveCommand}">
             <ToolbarItem.IconImageSource>
                 <OnPlatform
                     x:TypeArguments="ImageSource">
@@ -49,8 +49,6 @@
                         <RowDefinition Height="65*"/>
                         <RowDefinition Height="65*"/>
                     </Grid.RowDefinitions>
-                    <ActivityIndicator
-                        IsRunning="{Binding IsBusy}"/>
                     <Label
                         Padding="5"
                         Text="Nombre:"
@@ -101,6 +99,12 @@
                         Text="Buscar Foto"
                         Grid.ColumnSpan="2" Grid.Row="4"
                         Command="{Binding SelectPictureCommand}" />
+                    <ActivityIndicator
+                        Grid.Row="1"
+                        Grid.RowSpan="3"
+                        Grid.ColumnSpan="2"
+                        Color="DarkBlue"
+                        IsRunning="{Binding IsBusy}"/>
                 </Grid>
             </StackLayout>
         </ScrollView>

@@ -1052,10 +1052,6 @@ C:\Users\victo\Desktop\4 SEMESTRE\PROGRAMACION MULTIPLATAFORMA\Entrega Final\Del
 C:\Users\victo\Desktop\4 SEMESTRE\PROGRAMACION MULTIPLATAFORMA\Entrega Final\DeliveryProducts\Delivery.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
 D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\bin\Debug\Delivery.Android.dll
 D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\bin\Debug\Delivery.Android.pdb
-D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\bin\Debug\com.companyname.apptrips.apk
-D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\bin\Debug\com.companyname.apptrips.aab
-D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\bin\Debug\com.companyname.apptrips-Signed.aab
-D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\bin\Debug\com.companyname.apptrips-Signed.apk
 D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\bin\Debug\Delivery.dll
 D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\bin\Debug\Delivery.pdb
 D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\obj\Debug\90\MonoAndroid,Version=v9.0.AssemblyAttributes.cs
@@ -1101,10 +1097,7 @@ D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\o
 D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\obj\Debug\90\Delivery.Android.csproj.CopyComplete
 D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\obj\Debug\90\Delivery.Android.dll
 D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\obj\Debug\90\Delivery.Android.pdb
-D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\obj\Debug\90\android\bin\com.companyname.apptrips.apk
 D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\obj\Debug\90\android\bin\base.zip
-D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\obj\Debug\90\android\bin\com.companyname.apptrips.aab
-D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\obj\Debug\90\android\bin\com.companyname.apptrips.apks
 D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\obj\Debug\90\res\layout\tabbar.xml
 D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\obj\Debug\90\res\layout\toolbar.xml
 D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\obj\Debug\90\res\values\styles.xml
@@ -1597,7 +1590,6 @@ D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\o
 D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\obj\Debug\90\android\src\mono\MonoPackageManager_Resources.java
 D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\obj\Debug\90\android\src\xamarin\essentials\fileProvider.java
 D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\obj\Debug\90\android\bin\packaged_resources
-D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\obj\Debug\90\android\src\com\companyname\apptrips\R.java
 D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\obj\Debug\90\android\typemaps.arm64-v8a.o
 D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\obj\Debug\90\android\typemaps.armeabi-v7a.o
 D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\obj\Debug\90\android\typemaps.x86.o
@@ -2767,3 +2759,13 @@ C:\Users\Javie\OneDrive\Escritorio\Delivery_Exam\DeliveryProducts\Delivery.Andro
 C:\Users\Javie\OneDrive\Escritorio\Delivery_Exam\DeliveryProducts\Delivery.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\Javie\OneDrive\Escritorio\Delivery_Exam\DeliveryProducts\Delivery.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Javie\OneDrive\Escritorio\Delivery_Exam\DeliveryProducts\Delivery.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\bin\Debug\com.companyname.appdelivery.apk
+D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\bin\Debug\com.companyname.appdelivery.aab
+D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\bin\Debug\com.companyname.appdelivery-Signed.aab
+D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\bin\Debug\com.companyname.appdelivery-Signed.apk
+D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\obj\Debug\90\android\bin\com.companyname.appdelivery.apk
+D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\obj\Debug\90\android\bin\com.companyname.appdelivery.aab
+D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\obj\Debug\90\android\bin\com.companyname.appdelivery.apks
+D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\obj\Debug\90\res\drawable\product.png
+D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\obj\Debug\90\res\drawable\bag.png
+D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery.Android\obj\Debug\90\android\src\com\companyname\appdelivery\R.java

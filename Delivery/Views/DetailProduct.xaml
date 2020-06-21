@@ -68,7 +68,10 @@
                 BackgroundColor="DarkBlue"
                 Grid.Row="2"
                 CornerRadius="50"/>
-            <ActivityIndicator IsRunning="{Binding IsBusy}"/>
+            <ActivityIndicator
+                Color="DarkBlue"
+                Grid.RowSpan="3" 
+                IsRunning="{Binding IsBusy}"/>
             <Label 
                 Grid.Row="0"
                 Text="{Binding Product.Name}"

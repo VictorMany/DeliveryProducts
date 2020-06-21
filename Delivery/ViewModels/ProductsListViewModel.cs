@@ -88,7 +88,7 @@ namespace Delivery.ViewModels
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex);
+                await Application.Current.MainPage.DisplayAlert("Error", ex.Message, "OK");
             }
             IsBusy = false;
         }

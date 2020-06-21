@@ -8,7 +8,7 @@ namespace Delivery.Models
     public class ProductModel
     {
         
-        public int ID { get; set; }
+        public int? ID { get; set; }
         public string PictureBase64 { get; set; }
         public string Name { get; set; }
         public float Price { get; set; }

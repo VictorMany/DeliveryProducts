@@ -9585,26 +9585,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Javie\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Users\\ChrisAlvarez\\.nuget\\packages\\": {},
+    "D:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Javie\\OneDrive\\Escritorio\\Delivery_Exam\\DeliveryProducts\\Delivery.UWP\\Delivery.UWP.csproj",
+      "projectUniqueName": "D:\\Documentos\\Escuela\\XamarinMultiplataforma\\DeliveryProducts\\Delivery.UWP\\Delivery.UWP.csproj",
       "projectName": "Delivery.UWP",
-      "projectPath": "C:\\Users\\Javie\\OneDrive\\Escritorio\\Delivery_Exam\\DeliveryProducts\\Delivery.UWP\\Delivery.UWP.csproj",
-      "packagesPath": "C:\\Users\\Javie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Javie\\OneDrive\\Escritorio\\Delivery_Exam\\DeliveryProducts\\Delivery.UWP\\obj\\",
+      "projectPath": "D:\\Documentos\\Escuela\\XamarinMultiplataforma\\DeliveryProducts\\Delivery.UWP\\Delivery.UWP.csproj",
+      "packagesPath": "C:\\Users\\ChrisAlvarez\\.nuget\\packages\\",
+      "outputPath": "D:\\Documentos\\Escuela\\XamarinMultiplataforma\\DeliveryProducts\\Delivery.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "D:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Javie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ChrisAlvarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -9618,8 +9618,8 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "C:\\Users\\Javie\\OneDrive\\Escritorio\\Delivery_Exam\\DeliveryProducts\\Delivery\\Delivery.csproj": {
-              "projectPath": "C:\\Users\\Javie\\OneDrive\\Escritorio\\Delivery_Exam\\DeliveryProducts\\Delivery\\Delivery.csproj"
+            "D:\\Documentos\\Escuela\\XamarinMultiplataforma\\DeliveryProducts\\Delivery\\Delivery.csproj": {
+              "projectPath": "D:\\Documentos\\Escuela\\XamarinMultiplataforma\\DeliveryProducts\\Delivery\\Delivery.csproj"
             }
           }
         }
