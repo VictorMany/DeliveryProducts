@@ -149,7 +149,7 @@ namespace Delivery.Services
                 {
                     return new ApiResponse
                     {
-                        IsSuccess = false,
+                        IsSuccess = true,
                         Message = result.ToString(),
                         Result = null
                     };
@@ -192,10 +192,17 @@ namespace Delivery.Services
                     {
                         IsSuccess = false,
                         Message = result.ToString(),
-                        Result = null
+                        Result = "Ok"
                     };
                 }
-                return JsonConvert.DeserializeObject<ApiResponse>(result);
+                 // var data = JsonConvert.DeserializeObject<ApiResponse>(result);
+                return new ApiResponse
+                {
+                    IsSuccess = true,
+                    Message = "Succeded",
+                    Result = null
+                };
+
             }
             catch (System.Exception ex)
             {
@@ -232,6 +239,49 @@ namespace Delivery.Services
                 }
 
                 return JsonConvert.DeserializeObject<ApiResponse>(result);
+            }
+            catch (System.Exception ex)
+            {
+                return new ApiResponse
+                {
+                    IsSuccess = false,
+                    Message = ex.Message,
+                    Result = null
+                };
+            }
+        }
+
+
+        public async Task<ApiResponse> DeleteCartDataAsync(string controller, object data)
+        {
+            try
+            {
+                var serializeData = JsonConvert.SerializeObject(data);
+                HttpRequestMessage request = new HttpRequestMessage
+                {
+                    Content = new StringContent(serializeData, Encoding.UTF8, "application/json"),
+                    Method = HttpMethod.Delete,
+                    RequestUri = new Uri(ApiUrl + controller)
+                };
+                var response = await new HttpClient().SendAsync(request);
+                var result = await response.Content.ReadAsStringAsync();
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    return new ApiResponse
+                    {
+                        IsSuccess = true,
+                        Message = result.ToString(),
+                        Result = null
+                    };
+                }
+
+                return new ApiResponse
+                {
+                    IsSuccess = true,
+                    Message = "Ok",
+                    Result = true
+                };
             }
             catch (System.Exception ex)
             {

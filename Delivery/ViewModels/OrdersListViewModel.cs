@@ -19,45 +19,12 @@ namespace Delivery.ViewModels
         public Command SelectCommand => _selectCommand ?? (_selectCommand = new Command(SelectAction));
 
         Command _refreshPageCommand;
-        public Command RefershPageCommand => _refreshPageCommand ?? (_refreshPageCommand = new Command(GetListOrders));
+        public Command RefershPageCommand => _refreshPageCommand ?? (_refreshPageCommand = new Command(RefreshOrders));
 
         public OrdersListViewModel()
         {
             instance = this;
             OrderModel.staticParent = this;
-
-            /*listProducts = new List<ProductModel>()
-            {
-                new ProductModel
-                {
-                    ID = 1,
-                    Name= "Javier", 
-                    PictureBase64= "",
-                    Price = 34
-                },
-                 new ProductModel
-                {
-                    ID = 2,
-                    Name= "Anahi",
-                    PictureBase64= "",
-                    Price = 12
-                },
-                 new ProductModel
-                {
-                    ID = 1,
-                    Name= "Javier",
-                    PictureBase64= "",
-                    Price = 34
-                },
-                 new ProductModel
-                {
-                    ID = 2,
-                    Name= "Anahi",
-                    PictureBase64= "",
-                    Price = 12
-                }
-            };
-            ListProducts = listProducts;*/
             GetListOrders();
         }
 
@@ -72,10 +39,22 @@ namespace Delivery.ViewModels
         {
             IsBusy = true;
             ListOrders = App.listOrders;
+            for(int i = 0; i < ListOrders.Count; i++)
+            {
+                ListOrders[i].UpdateParent();
+            }
             IsBusy = false;
         }
 
-        
+        public async void RefreshOrders()
+        {
+            IsBusy = true;
+            App.getOrdersList();
+            ListOrders = App.listOrders;
+            IsBusy = false;
+        }
+
+
 
         public static OrdersListViewModel GetInstance()
         {
@@ -84,9 +63,8 @@ namespace Delivery.ViewModels
         }
 
 
-        private async void SelectAction(object obj)  //Nos va a llevar al detail del producto
+        public async void SelectAction(object obj)  //Nos va a llevar al detail del producto
         {
-            // Se mamo el Vic :D
             //Id del producto seleccionado 
             int a = (int)obj;
             //Obtener el producto a partir del Id que ya tenemos

@@ -40,6 +40,9 @@
                         AlignContent="Start"
                         JustifyContent="SpaceAround"
                         Wrap="Wrap">
+                        <ActivityIndicator 
+                            Color="DarkBlue"  
+                            IsRunning="{Binding IsBusy}"/>
                         <BindableLayout.ItemTemplate>
                             <DataTemplate>
                                 <StackLayout   
@@ -86,7 +89,7 @@
                                     </Grid>
                                     <StackLayout.GestureRecognizers>
                                         <TapGestureRecognizer 
-                                            Command="{Binding parent.SelectCommand}"
+                                            Command="{Binding parent2.SelectCommand}"
                                             CommandParameter="{Binding ID}">
                                         </TapGestureRecognizer>
                                     </StackLayout.GestureRecognizers>
@@ -146,7 +149,6 @@
                     VerticalOptions="End"
                     Command="{Binding NextCommand}"/>
             </Grid>
-            
         </Grid>
     </ContentPage.Content>
 </ContentPage>

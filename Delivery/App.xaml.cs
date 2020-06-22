@@ -56,7 +56,7 @@ namespace Delivery
             }
         }
 
-        public async void getOrdersList()
+        public static async void getOrdersList()
         {
             try
             {
@@ -82,7 +82,7 @@ namespace Delivery
             }
         }
 
-        public async void createOrder()
+        public static async void createOrder()
         {
             try
             {
@@ -102,6 +102,24 @@ namespace Delivery
             catch (Exception ex)
             {
                 Debug.WriteLine(ex);
+            }
+        }
+
+        public async void deleteOrder(int id)
+        {
+            try
+            {
+                ApiResponse response = await new ApiService().DeleteDataAsync("order", id);
+
+                if(!response.IsSuccess)
+                {
+                    await Current.MainPage.DisplayAlert("Failed", response.Message, "OK");
+                }
+
+            } 
+            catch (Exception ex)
+            {
+                await Current.MainPage.DisplayAlert("Error", ex.Message, "OK");
             }
         }
     }

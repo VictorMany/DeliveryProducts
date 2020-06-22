@@ -25,7 +25,13 @@
                 Padding="10"
                 Grid.Row="1">
                 <Label
-                    x:Name="Name"
+                    x:Name="Address"
+                    HorizontalOptions="Center" />
+                <Label
+                    x:Name="Date"
+                    HorizontalOptions="Center" />
+                <Label
+                    x:Name="TxtTotal"
                     HorizontalOptions="Center" />
             </StackLayout>
         </Grid>

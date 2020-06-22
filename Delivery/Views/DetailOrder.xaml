@@ -5,11 +5,182 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Delivery.Views.DetailOrder">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Editar" Command="{Binding EditCommand}">
+            <ToolbarItem.IconImageSource>
+                <OnPlatform
+                    x:TypeArguments="ImageSource">
+                    <On
+                        Platform="Android, UWP"
+                        Value="edit.png"/>
+                </OnPlatform>
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
+        <ToolbarItem Text="Borrar" Command="{Binding DeleteCommand}">
+            <ToolbarItem.IconImageSource>
+                <OnPlatform
+                    x:TypeArguments="ImageSource">
+                    <On
+                        Platform="Android, UWP"
+                        Value="trash.png"/>
+                </OnPlatform>
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition ></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1.61*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Frame
+            Grid.Column="0" 
+            Grid.Row="0" 
+            BorderColor="DarkBlue" 
+            CornerRadius="5" 
+            Padding="0">
+            <Label
+                Padding="5"
+                BackgroundColor="Blue"
+                FontAttributes="Bold"
+                FontSize="Large"
+                TextColor="White"
+                Text="Dirección: "/>
+        </Frame>
+        <Frame
+            Grid.Column="1" 
+            Grid.Row="0" 
+            BorderColor="DarkBlue" 
+            CornerRadius="5"
+            Padding="0">
+            <Label
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                FontSize="Large"
+                TextColor="Black"
+                Text="{Binding Order.Address}"/>
+        </Frame>
+        <Frame 
+            Grid.Column="0" 
+            Grid.Row="1" 
+            BorderColor="DarkBlue" 
+            CornerRadius="5" 
+            Padding="0">
+            <Label
+                Padding="5"
+                BackgroundColor="Blue"
+                FontAttributes="Bold" 
+                FontSize="Large"
+                TextColor="White" 
+                Text="Latitud:"/>
+        </Frame>
+        <Frame
+            Grid.Column="1" 
+            Grid.Row="1"  
+            BorderColor="DarkBlue" 
+            CornerRadius="5" 
+            Padding="0">
+            <Label
+                FontSize="Large"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                TextColor="Black"
+                Text="{Binding Order.Latitude}"/>
+        </Frame>
+        <Frame
+            Grid.Column="0" 
+            Grid.Row="2" 
+            BorderColor="DarkBlue" 
+            CornerRadius="5" 
+            Padding="0">
+            <Label
+                Padding="5"
+                BackgroundColor="Blue"
+                FontAttributes="Bold" 
+                FontSize="Large"
+                TextColor="White"
+                Text="Longitud:"/>
+        </Frame>
+        <Frame
+            Grid.Column="1" 
+            Grid.Row="2"  
+            BorderColor="DarkBlue" 
+            CornerRadius="5" 
+            Padding="0">
+            <Label
+                FontSize="Large"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                TextColor="Black"
+                Text="{Binding Order.Longitude}"/>
+        </Frame>
+        <Frame
+            Grid.Row="3"
+            CornerRadius="5"
+            Grid.Column="0"
+            Padding="0"
+            BackgroundColor="Blue">
+            <Label
+                Padding="5"
+                TextColor="White"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Text="Total"/>
+        </Frame>
+        <Frame
+            Grid.Column="1" 
+            Grid.Row="3"  
+            BorderColor="DarkBlue" 
+            CornerRadius="5" 
+            Padding="0">
+            <Label
+                FontSize="Large"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                TextColor="Black"
+                Text="{Binding Order.Total}"/>
+        </Frame>
+        <Frame
+            Grid.Row="4"
+            Grid.ColumnSpan="2"
+            CornerRadius="5"
+            Padding="0"
+            BackgroundColor="Blue">
+            <Label
+                Padding="5"
+                TextColor="White"
+                FontSize="Large"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                FontAttributes="Bold"
+                Text="Fecha de Pedido:"/>
+        </Frame>
+        <Label
+            Grid.ColumnSpan="2"
+            Grid.Row="5" 
+            BackgroundColor="DarkBlue" 
+            TextColor="White"
+            FontAttributes="Bold"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            Text="{Binding Order.Date}"/>
+        <Button 
+            Text="VER MAPA" 
+            TextColor="White"
+            Grid.Row="6"
+            Grid.ColumnSpan="2"
+            FontSize="17"
+            BackgroundColor="Blue" 
+            VerticalOptions="End"
+            Command="{Binding MapCommand}"/>
+    </Grid>
 </ContentPage>

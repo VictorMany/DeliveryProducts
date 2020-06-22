@@ -73,7 +73,7 @@ namespace Delivery.ViewModels
                     } else
                     {
                         App.getProductsList();
-                        await Application.Current.MainPage.DisplayAlert("Mensaje", "El Producto fue creado exitosamente", "Ok");
+                        await Application.Current.MainPage.DisplayAlert("Delivery", "El Producto fue creado exitosamente", "Ok");
                     }
                 }
                 else
@@ -86,7 +86,7 @@ namespace Delivery.ViewModels
                         PictureBase64 = ImageUrl ?? ""
                     }, ProductSelected.ID ?? 0);
                     App.getProductsList();
-                    await Application.Current.MainPage.DisplayAlert("Mensaje", "El Producto fue actualizado exitosamente", "Ok");
+                    await Application.Current.MainPage.DisplayAlert("Delivery", "El Producto fue actualizado exitosamente", "Ok");
                     DetailViewModel.GetInstance().GetProductContent(ProductSelected.ID ?? 0);
                 }
                 ProductsListViewModel.GetInstance().GetListProducts();
@@ -142,7 +142,7 @@ namespace Delivery.ViewModels
 
             var file = await CrossMedia.Current.PickPhotoAsync(new Plugin.Media.Abstractions.PickMediaOptions
             {
-                PhotoSize = Plugin.Media.Abstractions.PhotoSize.Small
+                PhotoSize = Plugin.Media.Abstractions.PhotoSize.Medium
             });
 
             if (file == null)

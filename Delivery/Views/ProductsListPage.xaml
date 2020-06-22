@@ -39,78 +39,95 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <RefreshView Command="{Binding RefershPageCommand}" IsRefreshing="{Binding IsBusy}">
-            <ScrollView>
-                <FlexLayout 
-                    x:Name="ItemsCollectionView"
-                    BindableLayout.ItemsSource="{Binding ListProducts}"
-                    Direction="Row"
-                    AlignContent="Start"
-                    JustifyContent="Start"
-                    Wrap="Wrap"
-                    Margin="5,5">
-                    <BindableLayout.ItemTemplate>
-                        <DataTemplate>
-                            <StackLayout
-                                FlexLayout.Basis="50%"
-                                Padding="5, 10, 5, 10"
-                                HeightRequest="140"
-                                VerticalOptions="CenterAndExpand">
-                                <Grid 
-                                    BackgroundColor="#58CDFC"
-                                    Padding="15">
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="2*"></RowDefinition>
-                                        <RowDefinition Height="3*"></RowDefinition>
-                                        <RowDefinition Height="1*"></RowDefinition>
-                                    </Grid.RowDefinitions>
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="1*"></ColumnDefinition>
-                                        <ColumnDefinition Width="1*"></ColumnDefinition>
-                                    </Grid.ColumnDefinitions>
-                                    <Label
-                                        Text="{Binding Name}"   
-                                        LineBreakMode="WordWrap" 
-                                        Style="{DynamicResource ListItemTextStyle}"
-                                        TextColor="White"
-                                        Grid.ColumnSpan="2"
-                                        Grid.Row="0"
-                                        Grid.RowSpan="2"
-                                        FontSize="Subtitle"
-                                        FontAttributes="Bold"/>
-                                    <Label  
-                                        Text="{Binding Price, StringFormat='${0:F2}'}" 
-                                        LineBreakMode="NoWrap"
-                                        Style="{DynamicResource ListItemDetailTextStyle}"
-                                        TextColor="White"
-                                        Grid.Column="0"
-                                        Grid.Row="2"
-                                        FontSize="12"
-                                        FontAttributes="Bold"/>
-                                    <Frame
-                                        Grid.Column="1"
-                                        Padding="0"
-                                        Grid.Row="1"
-                                        CornerRadius="999"
-                                        Grid.RowSpan="2">
-                                        <Image
-                                            Aspect="AspectFill"
-                                            Source="{Binding PictureBase64, Converter={StaticResource ImageConverter}}"
-                                            HorizontalOptions="Fill"
-                                            VerticalOptions="Fill"/>
-                                    </Frame>
-                                </Grid>
-                                <StackLayout.GestureRecognizers>
-                                    <TapGestureRecognizer 
-                                        Command="{Binding parent.SelectCommand}"
-                                        CommandParameter="{Binding ID}">
-                                    </TapGestureRecognizer>
-                                </StackLayout.GestureRecognizers>
-                            </StackLayout>
-                        </DataTemplate>
-                    </BindableLayout.ItemTemplate>
-                </FlexLayout>
-            </ScrollView>
-        </RefreshView>
+        <StackLayout> 
+            <Label Text="Productos"
+                        FontSize="Large"
+                        VerticalOptions="Center"
+                        Margin="5"
+                        Padding="20, 5"
+                        BackgroundColor="Blue"
+                        FontAttributes="Bold"
+                        TextColor="White"/>
+        <RefreshView 
+            Command="{Binding RefershPageCommand}" 
+            IsRefreshing="{Binding IsBusy}">
+            <Frame
+                Margin="5, 0"
+                Padding="5, 0"
+                BorderColor="#58CDFC">
+                <ScrollView>       
+                    <FlexLayout 
+                        x:Name="ItemsCollectionView"
+                        BindableLayout.ItemsSource="{Binding ListProducts}"
+                        Direction="Row"
+                        AlignContent="Start"
+                        JustifyContent="Start"
+                        Wrap="Wrap"
+                        Margin="5,5">
+                        <BindableLayout.ItemTemplate>
+                            <DataTemplate>
+                                <StackLayout
+                                    FlexLayout.Basis="50%"
+                                    Padding="5, 10, 5, 10"
+                                    HeightRequest="140"
+                                    VerticalOptions="CenterAndExpand">
+                                    <Grid 
+                                        BackgroundColor="#58CDFC"
+                                        Padding="15">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="2*"></RowDefinition>
+                                            <RowDefinition Height="3*"></RowDefinition>
+                                            <RowDefinition Height="1*"></RowDefinition>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="1*"></ColumnDefinition>
+                                            <ColumnDefinition Width="1*"></ColumnDefinition>
+                                        </Grid.ColumnDefinitions>
+                                        <Label
+                                            Text="{Binding Name}"   
+                                            LineBreakMode="WordWrap" 
+                                            Style="{DynamicResource ListItemTextStyle}"
+                                            TextColor="White"
+                                            Grid.ColumnSpan="2"
+                                            Grid.Row="0"
+                                            Grid.RowSpan="2"
+                                            FontSize="Subtitle"
+                                            FontAttributes="Bold"/>
+                                        <Label  
+                                            Text="{Binding Price, StringFormat='${0:F2}'}" 
+                                            LineBreakMode="NoWrap"
+                                            Style="{DynamicResource ListItemDetailTextStyle}"
+                                            TextColor="White"
+                                            Grid.Column="0"
+                                            Grid.Row="2"
+                                            FontSize="12"
+                                            FontAttributes="Bold"/>
+                                        <Frame
+                                            Grid.Column="1"
+                                            Padding="0"
+                                            Grid.Row="1"
+                                            CornerRadius="999"
+                                            Grid.RowSpan="2">
+                                            <Image
+                                                Aspect="AspectFill"
+                                                Source="{Binding PictureBase64, Converter={StaticResource ImageConverter}}"
+                                                HorizontalOptions="Fill"
+                                                VerticalOptions="Fill"/>
+                                        </Frame>
+                                    </Grid>
+                                    <StackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer 
+                                            Command="{Binding parent.SelectCommand}"
+                                            CommandParameter="{Binding ID}">
+                                        </TapGestureRecognizer>
+                                    </StackLayout.GestureRecognizers>
+                                </StackLayout>
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+                    </FlexLayout>
+                </ScrollView>
+            </Frame>
+          </RefreshView>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

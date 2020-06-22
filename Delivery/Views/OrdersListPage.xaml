@@ -8,17 +8,16 @@
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="0.35*"/>
-                <RowDefinition Height="2.6*"/>
-                <RowDefinition Height="1.6*"/>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition Height="5*"/>
             </Grid.RowDefinitions>
             <Label
-                Text="Resumen:"
+                Text="Pedidos"
                 FontSize="Large"
                 VerticalOptions="Center"
                 Margin="5, 0"
                 Padding="20, 5"
-                BackgroundColor="#58CDFC"
+                BackgroundColor="Blue"
                 FontAttributes="Bold"
                 TextColor="White"/>
             <Frame
@@ -53,7 +52,6 @@
                                             <ColumnDefinition></ColumnDefinition>
                                             <ColumnDefinition></ColumnDefinition>
                                         </Grid.ColumnDefinitions>
-
                                         <Label 
                                             Text="{Binding Date}"   
                                             LineBreakMode="NoWrap" 
@@ -64,20 +62,11 @@
                                             FontSize="Large"
                                             FontAttributes="Bold"/>
                                         <Label  
-                                            Text="{Binding Latitude}" 
+                                            Text="{Binding Address}" 
                                             LineBreakMode="NoWrap"
                                             Style="{DynamicResource ListItemDetailTextStyle}"
                                             TextColor="White"
-                                            Grid.Column="0"
-                                            Grid.Row="1"
-                                            FontSize="Large"
-                                            FontAttributes="Bold"/>
-                                        <Label
-                                            Text="{Binding Longitude}" 
-                                            LineBreakMode="NoWrap"
-                                            Style="{DynamicResource ListItemDetailTextStyle}"
-                                            TextColor="White"
-                                            Grid.Column="1"
+                                            Grid.ColumnSpan="2"
                                             Grid.Row="1"
                                             FontSize="Large"
                                             FontAttributes="Bold"/>
@@ -85,7 +74,7 @@
                                     <StackLayout.GestureRecognizers>
                                         <TapGestureRecognizer 
                                             Command="{Binding parent.SelectCommand}"
-                                            CommandParameter="{Binding OrderID}">
+                                            CommandParameter="{Binding ID}">
                                         </TapGestureRecognizer>
                                     </StackLayout.GestureRecognizers>
                                 </StackLayout>

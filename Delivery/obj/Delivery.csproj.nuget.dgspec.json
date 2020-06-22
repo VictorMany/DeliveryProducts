@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Javie\\OneDrive\\Escritorio\\Delivery_Exam\\DeliveryProducts\\Delivery\\Delivery.csproj": {}
+    "C:\\Users\\Anahi Nova\\Documents\\Taller de Desarrollo Movil\\AppDelivery Final 2\\DeliveryProducts\\Delivery\\Delivery.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Javie\\OneDrive\\Escritorio\\Delivery_Exam\\DeliveryProducts\\Delivery\\Delivery.csproj": {
+    "C:\\Users\\Anahi Nova\\Documents\\Taller de Desarrollo Movil\\AppDelivery Final 2\\DeliveryProducts\\Delivery\\Delivery.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Javie\\OneDrive\\Escritorio\\Delivery_Exam\\DeliveryProducts\\Delivery\\Delivery.csproj",
+        "projectUniqueName": "C:\\Users\\Anahi Nova\\Documents\\Taller de Desarrollo Movil\\AppDelivery Final 2\\DeliveryProducts\\Delivery\\Delivery.csproj",
         "projectName": "Delivery",
-        "projectPath": "C:\\Users\\Javie\\OneDrive\\Escritorio\\Delivery_Exam\\DeliveryProducts\\Delivery\\Delivery.csproj",
-        "packagesPath": "C:\\Users\\Javie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Javie\\OneDrive\\Escritorio\\Delivery_Exam\\DeliveryProducts\\Delivery\\obj\\",
+        "projectPath": "C:\\Users\\Anahi Nova\\Documents\\Taller de Desarrollo Movil\\AppDelivery Final 2\\DeliveryProducts\\Delivery\\Delivery.csproj",
+        "packagesPath": "C:\\Users\\Anahi Nova\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Anahi Nova\\Documents\\Taller de Desarrollo Movil\\AppDelivery Final 2\\DeliveryProducts\\Delivery\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Javie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Anahi Nova\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -80,7 +80,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

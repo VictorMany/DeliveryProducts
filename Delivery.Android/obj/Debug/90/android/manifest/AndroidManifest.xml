@@ -17,7 +17,6 @@
     <provider android:name="android.support.v4.content.FileProvider" android:authorities="com.companyname.appdelivery.fileprovider" android:exported="false" android:grantUriPermissions="true">
       <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"></meta-data>
     </provider>
-    <meta-data android:name="com.google.android.geo.API_KEY" android:value="" />
     <activity android:configChanges="orientation|screenSize" android:icon="@mipmap/icon" android:label="Delivery" android:theme="@style/MainTheme" android:name="crc642007a56b2bc0a4ce.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />

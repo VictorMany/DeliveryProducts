@@ -25,5 +25,10 @@ namespace Delivery.Models
             parent = staticParent;
         }
 
+        public void UpdateParent()
+        {
+            parent = staticParent;
+        }
+
     }
 }

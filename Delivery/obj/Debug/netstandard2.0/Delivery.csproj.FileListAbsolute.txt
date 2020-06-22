@@ -105,3 +105,26 @@ C:\Users\Javie\OneDrive\Escritorio\Delivery_Exam\DeliveryProducts\Delivery\obj\D
 C:\Users\Javie\OneDrive\Escritorio\Delivery_Exam\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Delivery.pdb
 D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\DetailOrder.xaml.g.cs
 D:\Documentos\Escuela\XamarinMultiplataforma\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\OrdersListPage.xaml.g.cs
+C:\Users\Anahi Nova\Documents\Taller de Desarrollo Movil\AppDelivery Final 2\DeliveryProducts\Delivery\bin\Debug\netstandard2.0\Delivery.deps.json
+C:\Users\Anahi Nova\Documents\Taller de Desarrollo Movil\AppDelivery Final 2\DeliveryProducts\Delivery\bin\Debug\netstandard2.0\Delivery.dll
+C:\Users\Anahi Nova\Documents\Taller de Desarrollo Movil\AppDelivery Final 2\DeliveryProducts\Delivery\bin\Debug\netstandard2.0\ref\Delivery.dll
+C:\Users\Anahi Nova\Documents\Taller de Desarrollo Movil\AppDelivery Final 2\DeliveryProducts\Delivery\bin\Debug\netstandard2.0\Delivery.pdb
+C:\Users\Anahi Nova\Documents\Taller de Desarrollo Movil\AppDelivery Final 2\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Anahi Nova\Documents\Taller de Desarrollo Movil\AppDelivery Final 2\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Anahi Nova\Documents\Taller de Desarrollo Movil\AppDelivery Final 2\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\ConfirmOrderPage.xaml.g.cs
+C:\Users\Anahi Nova\Documents\Taller de Desarrollo Movil\AppDelivery Final 2\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\DetailOrder.xaml.g.cs
+C:\Users\Anahi Nova\Documents\Taller de Desarrollo Movil\AppDelivery Final 2\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\DetailProduct.xaml.g.cs
+C:\Users\Anahi Nova\Documents\Taller de Desarrollo Movil\AppDelivery Final 2\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\EditOrderPage.xaml.g.cs
+C:\Users\Anahi Nova\Documents\Taller de Desarrollo Movil\AppDelivery Final 2\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\EditProductPage.xaml.g.cs
+C:\Users\Anahi Nova\Documents\Taller de Desarrollo Movil\AppDelivery Final 2\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\MapPage.xaml.g.cs
+C:\Users\Anahi Nova\Documents\Taller de Desarrollo Movil\AppDelivery Final 2\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\MenuPage.xaml.g.cs
+C:\Users\Anahi Nova\Documents\Taller de Desarrollo Movil\AppDelivery Final 2\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\OrderPage.xaml.g.cs
+C:\Users\Anahi Nova\Documents\Taller de Desarrollo Movil\AppDelivery Final 2\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\OrdersListPage.xaml.g.cs
+C:\Users\Anahi Nova\Documents\Taller de Desarrollo Movil\AppDelivery Final 2\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\ProductsListPage.xaml.g.cs
+C:\Users\Anahi Nova\Documents\Taller de Desarrollo Movil\AppDelivery Final 2\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Delivery.csproj.CoreCompileInputs.cache
+C:\Users\Anahi Nova\Documents\Taller de Desarrollo Movil\AppDelivery Final 2\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Delivery.AssemblyInfoInputs.cache
+C:\Users\Anahi Nova\Documents\Taller de Desarrollo Movil\AppDelivery Final 2\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Delivery.AssemblyInfo.cs
+C:\Users\Anahi Nova\Documents\Taller de Desarrollo Movil\AppDelivery Final 2\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Anahi Nova\Documents\Taller de Desarrollo Movil\AppDelivery Final 2\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Delivery.dll
+C:\Users\Anahi Nova\Documents\Taller de Desarrollo Movil\AppDelivery Final 2\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\ref\Delivery.dll
+C:\Users\Anahi Nova\Documents\Taller de Desarrollo Movil\AppDelivery Final 2\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Delivery.pdb

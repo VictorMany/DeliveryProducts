@@ -32,39 +32,6 @@ namespace Delivery.ViewModels
         {
             instance = this;
             ProductModel.staticParent = this;
-
-            /*listProducts = new List<ProductModel>()
-            {
-                new ProductModel
-                {
-                    ID = 1,
-                    Name= "Javier", 
-                    PictureBase64= "",
-                    Price = 34
-                },
-                 new ProductModel
-                {
-                    ID = 2,
-                    Name= "Anahi",
-                    PictureBase64= "",
-                    Price = 12
-                },
-                 new ProductModel
-                {
-                    ID = 1,
-                    Name= "Javier",
-                    PictureBase64= "",
-                    Price = 34
-                },
-                 new ProductModel
-                {
-                    ID = 2,
-                    Name= "Anahi",
-                    PictureBase64= "",
-                    Price = 12
-                }
-            };
-            ListProducts = listProducts;*/
             GetListProducts();
         }
 
@@ -75,7 +42,7 @@ namespace Delivery.ViewModels
             set => SetProperty(ref _ListProducts, value);
         }
 
-        public async void RefreshProducts()
+        public void RefreshProducts()
         {
             IsBusy = true;
             App.getProductsList();
@@ -86,7 +53,7 @@ namespace Delivery.ViewModels
         public async void GetListProducts()
         {
             IsBusy = true;
-            await Task.Delay(4000);
+            await Task.Delay(4500);
             ListProducts = App.listProducts;
             IsBusy = false;
         }

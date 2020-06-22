@@ -89,12 +89,13 @@ namespace Delivery.ViewModels
             bool isSure = await Application.Current.MainPage.DisplayAlert("Eliminar", "¿Deseas eliminar el producto?", "SI", "NO");
             if (isSure)
             {
-                if (Product.ID != 0)
+                if (Product.ID != null)
                 {
                     IsBusy = true;
                     try
                     {
                         ApiResponse response = await new ApiService().DeleteDataAsync("product", Product.ID ?? 0);
+                        App.getProductsList();
                         ProductsListViewModel.GetInstance().GetListProducts();
                         await Application.Current.MainPage.DisplayAlert("Delivery", "El Producto fue borrado exitosamente!!", "Ok");
                         await MenuPage.menuPages.Detail.Navigation.PopAsync();
