@@ -128,3 +128,4 @@ C:\Users\Anahi Nova\Documents\Taller de Desarrollo Movil\AppDelivery Final 2\Del
 C:\Users\Anahi Nova\Documents\Taller de Desarrollo Movil\AppDelivery Final 2\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Delivery.dll
 C:\Users\Anahi Nova\Documents\Taller de Desarrollo Movil\AppDelivery Final 2\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\ref\Delivery.dll
 C:\Users\Anahi Nova\Documents\Taller de Desarrollo Movil\AppDelivery Final 2\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Delivery.pdb
+C:\Users\Javie\OneDrive\Escritorio\Delivery_Exam\DeliveryProducts\Delivery\obj\Debug\netstandard2.0\Views\EditOrderPage.xaml.g.cs

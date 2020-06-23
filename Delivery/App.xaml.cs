@@ -56,6 +56,26 @@ namespace Delivery
             }
         }
 
+        public static async void GetCart()
+        {
+            try
+            {
+                ApiResponse response = await new ApiService().GetDataAsync<OrderModel>("order");
+                if (response != null || response.Result != null)
+                {
+                    ObservableCollection<OrderModel> orderCollection = (ObservableCollection<OrderModel>)response.Result;
+                    if (orderCollection[orderCollection.Count - 1].Latitude == 0 && orderCollection[orderCollection.Count - 1].Longitude == 0)
+                    {
+                        car = orderCollection[orderCollection.Count - 1];
+                    }
+                }
+            }
+            catch(Exception ex)
+            {
+                Debug.WriteLine(ex);
+            }
+        }
+
         public static async void getOrdersList()
         {
             try

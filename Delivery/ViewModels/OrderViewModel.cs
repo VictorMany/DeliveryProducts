@@ -52,7 +52,8 @@ namespace Delivery.ViewModels
         public OrderViewModel(){
 
             ProductModel.staticParent2 = this;
-
+            App.GetCart();
+            
             Total = 0;
             Order = new OrderModel
             {
@@ -105,6 +106,7 @@ namespace Delivery.ViewModels
             IsBusy = true;
             try
             {
+                await Task.Delay(3500);
                 ApiResponse response = await new ApiService().GetListDataAsyncByID<ProductModel>("orderProduct", App.car.ID);
                 if (response != null || response.Result != null)
                 {
@@ -167,8 +169,9 @@ namespace Delivery.ViewModels
 
                 if (response.IsSuccess != false)
                 {
-                    await Application.Current.MainPage.DisplayAlert("Delivery", "Gracias por confiar en nosotros!!!, su pedido se ha realizado", "Ok");
                     App.getOrdersList();
+                    await Task.Delay(3000);
+                    await Application.Current.MainPage.DisplayAlert("Delivery", "Gracias por confiar en nosotros!!!, su pedido se ha realizado", "Ok");
                     App.menuPage.Detail = new NavigationPage(new ProductsListPage());
                 }
                 else
